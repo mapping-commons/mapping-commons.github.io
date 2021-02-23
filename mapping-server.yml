@@ -1,0 +1,7 @@
+iri: https://w3id.org/mapping-commons/server
+title: Mapping Commons Registry Server
+registries:
+  - id: mh_mapping_initiative
+    uri: https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/mappings.yml
+  - id: agronomy
+    uri: https://raw.githubusercontent.com/mapping-commons/agronomy/main/mappings.yml
