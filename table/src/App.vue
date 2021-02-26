@@ -4,7 +4,8 @@
       <VueBootstrapTable :columns='columns'
                          :values='mappings'
                          :show-filter=true
-                         :selectable=false>
+                         :selectable=false
+                         :filter-case-sensitive=false>
       </VueBootstrapTable>
     </div>
   </div>
