@@ -10,9 +10,9 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Builds web componennt
 ```
-npm run build
+npm run build -- --target wc --name mapping-commons-table src/App.vue
 ```
 
 ### Lints and fixes files
