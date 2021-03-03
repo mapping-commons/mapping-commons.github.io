@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <div id="table-container">
-      <VueBootstrapTable :columns='columns'
-                         :values='mappings'
-                         :show-filter=true
-                         :selectable=false
-                         :filter-case-sensitive=false>
-      </VueBootstrapTable>
+      <b-table :items="mappings"
+               :fields="fields"
+               responsive
+               > </b-table>
     </div>
   </div>
 </template>
@@ -14,48 +12,53 @@
 <script>
 import axios from 'axios'
 import YAML from 'yamljs'
-import VueBootstrapTable from 'vue2-bootstrap-table2'
 
 export default {
   name: 'App',
   components: {
-    VueBootstrapTable: VueBootstrapTable
   },
   data () {
     return {
       mappings: [],
-      columns: [
+      fields: [
         {
-          name: 'mapping_set_id',
-          title: 'ID'
+          key: 'mapping_set_id',
+          label: 'ID',
+          sortable: true
         },
         {
-          name: 'mapping_set_group',
-          title: 'Group'
+          key: 'mapping_set_group',
+          label: 'Group',
+          sortable: true
         },
         {
-          name: 'mapping_set_title',
-          title: 'Title'
+          key: 'mapping_set_title',
+          label: 'Title',
+          sortable: true
         },
         {
-          name: 'mapping_set_description',
-          title: 'Description'
+          key: 'mapping_set_description',
+          label: 'Description',
+          sortable: true
         },
         {
-          name: 'creator_id',
-          title: 'Creator ID'
+          key: 'creator_id',
+          label: 'Creator ID',
+          sortable: true
         },
         {
-          name: 'curie_map',
-          title: 'CURIE Map'
+          key: 'curie_map',
+          label: 'CURIE Map'
         },
         {
-          name: 'license',
-          title: 'License'
+          key: 'license',
+          label: 'License',
+          sortable: true
         },
         {
-          name: 'mapping_provider',
-          title: 'Mapping Provider'
+          key: 'mapping_provider',
+          title: 'Mapping Provider',
+          sortable: true
         }
       ]
     }
