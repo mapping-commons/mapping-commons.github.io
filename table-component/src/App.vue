@@ -1,21 +1,36 @@
 <template>
   <div id="app">
-    <div id="table-container">
-      <b-table :items="mappings"
-               :fields="fields"
-               responsive
-               > </b-table>
-    </div>
+    <b-container>
+      <div id="table-container">
+        <b-table :items="mappings"
+                 :fields="fields"
+                 responsive
+                 > </b-table>
+      </div>
+    </b-container>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import YAML from 'yamljs'
+// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+import { BTable } from 'bootstrap-vue'
+
+// Import Bootstrap an BootstrapVue CSS files (order is important)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Make BootstrapVue available throughout your project
+// Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+// Vue.use(IconsPlugin)
 
 export default {
   name: 'App',
   components: {
+    BTable
   },
   data () {
     return {
