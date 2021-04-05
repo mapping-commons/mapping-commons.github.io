@@ -1,9 +1,19 @@
 <template>
   <div id="app">
     <b-container>
+      <div>
+        <b-form-input
+              id="filter-input"
+              v-model="filter"
+              type="search"
+              placeholder="Type to Search"
+            ></b-form-input>
+      </div>
+      <div>{{filter}}</div>
       <div id="table-container">
         <b-table :items="mappings"
                  :fields="fields"
+                 :filter="filter"
                  responsive
                  > </b-table>
       </div>
@@ -14,26 +24,14 @@
 <script>
 import axios from 'axios'
 import YAML from 'yamljs'
-// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
-
-import { BTable } from 'bootstrap-vue'
-
-// Import Bootstrap an BootstrapVue CSS files (order is important)
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-// Make BootstrapVue available throughout your project
-// Vue.use(BootstrapVue)
-// Optionally install the BootstrapVue icon components plugin
-// Vue.use(IconsPlugin)
 
 export default {
   name: 'App',
   components: {
-    BTable
   },
   data () {
     return {
+      filter: '',
       mappings: [],
       fields: [
         {
