@@ -9,7 +9,6 @@
               placeholder="Type to Search"
             ></b-form-input>
       </div>
-      <div>{{filter}}</div>
       <div id="table-container">
         <b-table :items="mappings"
                  :fields="fields"
