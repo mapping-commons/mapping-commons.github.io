@@ -1,0 +1,3 @@
+# Original license applies
+
+A SSSOM mapping file derived from another source just _changes its form_, not its content. The original license restrictions as laid out by the license provider applies. We try to propagate license statements as much as possible, but if we could not find a clear license statement, the presence of this default statement indicates that you should only be using the mapping if you understand that the original license applies.
