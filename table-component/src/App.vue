@@ -82,7 +82,7 @@ export default {
         registryList.registries.forEach(registryEntry => {
           axios.get(registryEntry.uri).then(response => {
             const registry = YAML.parse(response.data)
-            registry.mappings.forEach(mapping => {
+            registry.mapping_set_references.forEach(mapping => {
               this.mappings.push(mapping)
             })
           })
