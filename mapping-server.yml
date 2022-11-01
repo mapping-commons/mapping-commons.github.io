@@ -3,5 +3,5 @@ title: Mapping Commons Registry Server
 registries:
   - id: mh_mapping_initiative
     uri: https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/registry.yml
-  - id: agronomy
-    uri: https://raw.githubusercontent.com/mapping-commons/agronomy/main/mappings.yml
+  - id: disease
+    uri: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings.yml
