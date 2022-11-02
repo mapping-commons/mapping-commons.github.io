@@ -23,7 +23,7 @@
 <script>
 import axios from 'axios'
 import YAML from 'yamljs'
-
+import Papa from 'papaparse'
 export default {
   name: 'App',
   components: {
@@ -44,12 +44,12 @@ export default {
           sortable: true
         },
         {
-          key: 'mapping_set_title',
+          key: 'registry_title',
           label: 'Title',
           sortable: true
         },
         {
-          key: 'mapping_set_description',
+          key: 'registry_description',
           label: 'Description',
           sortable: true
         },
@@ -71,19 +71,60 @@ export default {
           key: 'mapping_provider',
           title: 'Mapping Provider',
           sortable: true
+        },
+        {
+          key: 'mapping_set_description',
+          title: 'Mapping Set Description',
+          sortable: true
         }
       ]
     }
   },
   mounted () {
+    const papaConf = {
+      header: true,
+      delimiter: '\t',
+      skipEmptyLines: true
+    }
+    const startByValue = (path, obj = self, prefix = '') => {
+      try {
+        const properties = Array.isArray(path) ? path : path.split('.')
+        const ret = properties.reduce((prev, curr) => {
+          return obj.filter((e) => {
+            const values = Object.values(e)[0]
+            const x = (values.startsWith(prev) || values.startsWith(curr))
+            return x
+          })
+        })
+        return Object.values(ret[ret.length - 1])[0].replace(prefix, '')
+      } catch (err) {
+        return ''
+      }
+    }
     axios.get('https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mapping-server.yml')
       .then(response => {
         const registryList = YAML.parse(response.data)
+        registryList.registries = registryList.registries || []
         registryList.registries.forEach(registryEntry => {
           axios.get(registryEntry.uri).then(response => {
             const registry = YAML.parse(response.data)
-            registry.mappings.forEach(mapping => {
-              this.mappings.push(mapping)
+            registry.mappings = registry.mappings || []
+            registry.mapping_set_references.forEach(mapping => {
+              axios.get(mapping.mapping_set_id).then(response => {
+                Papa.parse(response.data, {
+                  ...papaConf,
+                  complete: (tsv) => {
+                    const tsvparsed = {
+                      license: startByValue('# curie_map.# license: ', tsv.data, '# license: '),
+                      creator_id: startByValue('# creator_id:.', tsv.data, '# creator_id: '),
+                      mapping_provider: startByValue('# curie_map.# mapping_provider:', tsv.data, '# mapping_provider: '),
+                      mapping_set_description: startByValue('# curie_map.# mapping_set_description:', tsv.data, '# mapping_set_description: ')
+                    }
+                    const obj = Object.assign({}, tsvparsed, mapping, registry)
+                    this.mappings.push(obj)
+                  }
+                })
+              })
             })
           })
         })
