@@ -108,7 +108,6 @@ export default {
         registryList.registries.forEach(registryEntry => {
           axios.get(registryEntry.uri).then(response => {
             const registry = YAML.parse(response.data)
-<<<<<<< HEAD
             registry.mappings = registry.mappings || []
             registry.mapping_set_references.forEach(mapping => {
               axios.get(mapping.mapping_set_id).then(response => {
@@ -126,10 +125,6 @@ export default {
                   }
                 })
               })
-=======
-            registry.mapping_set_references.forEach(mapping => {
-              this.mappings.push(mapping)
->>>>>>> 18328a805062ba37620e5cba89163ac9c794661b
             })
           })
         })
