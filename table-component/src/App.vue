@@ -49,20 +49,6 @@ export default {
           sortable: true
         },
         {
-          key: 'registry_description',
-          label: 'Description',
-          sortable: true
-        },
-        {
-          key: 'creator_id',
-          label: 'Creator ID',
-          sortable: true
-        },
-        {
-          key: 'curie_map',
-          label: 'CURIE Map'
-        },
-        {
           key: 'license',
           label: 'License',
           sortable: true
