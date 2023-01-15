@@ -25,7 +25,7 @@ jobs:
         cache: 'npm'
     :working-directory
     - run: npm run build --if-present
-     working-directory: ./table-component
+      working-directory: ./table-component
     - run: mkdir gh-pages
     - run: touch gh-pages/.nojekyll
     - run: mv table-component/dist/* ./gh-pages/
