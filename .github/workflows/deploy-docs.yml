@@ -23,12 +23,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd table-component
+    :working-directory
     - run: npm run build --if-present
+     working-directory: ./table-component
     - run: mkdir gh-pages
     - run: touch gh-pages/.nojekyll
-    - run: mv dist/* ./gh-pages/
-    - run: cd ..
+    - run: mv table-component/dist/* ./gh-pages/
 
 
     - name: Set up Python 3.
