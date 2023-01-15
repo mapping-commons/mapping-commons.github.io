@@ -30,7 +30,6 @@ jobs:
     - run: mkdir gh-pages
     - run: touch gh-pages/.nojekyll
     - run: mv table-component/dist/* ./gh-pages/
-    - run: mv table-component/public ./gh-pages/
 
 
     - name: Set up Python 3.
