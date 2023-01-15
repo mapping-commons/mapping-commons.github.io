@@ -24,7 +24,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: cd table-component
-    - run: npm ci
     - run: npm run build --if-present
     - run: mkdir gh-pages
     - run: touch gh-pages/.nojekyll
