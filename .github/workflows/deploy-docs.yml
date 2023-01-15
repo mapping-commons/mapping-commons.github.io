@@ -43,8 +43,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Get Data.
-    - run: make
-    - run: mv table-component/public/* ./gh-pages/
+      run: |
+        make && mv table-component/public/* ./gh-pages/
 
     - name: Deploy documentation.
       if: ${{ github.event_name == 'push' }}
