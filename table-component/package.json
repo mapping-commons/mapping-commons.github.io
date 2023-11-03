@@ -18,6 +18,7 @@
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
     "vue-axios": "^3.2.4",
+    "vuetify": "^2.7.1",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
@@ -34,7 +35,11 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "papaparse": "^5.3.2",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.5.8",
     "vue-cli-plugin-yaml-loader": "~1.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
   }
 }

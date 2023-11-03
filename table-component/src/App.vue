@@ -1,133 +1,194 @@
 <template>
   <div id="app">
-    <b-container>
-      <div>
-        <b-form-input
-              id="filter-input"
-              v-model="filter"
-              type="search"
-              placeholder="Type to Search"
-            ></b-form-input>
-      </div>
-      <div id="table-container">
-        <b-table :items="mappings"
-                 :fields="fields"
-                 :filter="filter"
-                 responsive
-                 > </b-table>
-      </div>
-    </b-container>
+    <v-app id="inspire">
+      <v-card>
+        <v-card-title>
+          <v-text-field
+            v-model="search"
+            append-icon="mdi-magnify"
+            label="Search"
+            :search="search"
+            single-line
+            hide-details
+          ></v-text-field>
+        </v-card-title>
+
+        <v-data-table
+          :headers="headers"
+          :items="mappings"
+          :items-per-page="-1"
+          class="elevation-1"
+          :search="search"
+        >
+          <template #item.mapping_set_id="{ item }">
+            <a target="_blank" :href="`${item.mapping_set_id}`">
+              {{ item.mapping_set_id }}
+            </a>
+          </template>
+          <template #item.mapping_set_group="{ item }">
+            {{ item.mapping_set_group }}
+          </template>
+          <template #item.registry_title="{ item }">
+            {{ item.registry_title }}
+          </template>
+          <template #item.license="{ item }">
+            <a target="_blank" :href="`${item.license}`">
+              {{ item.license }}
+            </a>
+          </template>
+          <template #item.mapping_provider="{ item }">
+            <a target="_blank" :href="`${item.mapping_provider}`">
+              {{ item.mapping_provider }}
+            </a>
+          </template>
+          <template #item.mapping_set_description="{ item }">
+            {{ item.mapping_set_description }}
+          </template>
+        </v-data-table>
+      </v-card>
+    </v-app>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-import YAML from 'yamljs'
-import Papa from 'papaparse'
+import axios from "axios";
+import YAML from "yamljs";
+import Papa from "papaparse";
 export default {
-  name: 'App',
-  components: {
-  },
-  data () {
+  name: "App",
+  components: {},
+  data() {
     return {
-      filter: '',
+      search: "",
       mappings: [],
-      fields: [
+      headers: [
         {
-          key: 'mapping_set_id',
-          label: 'ID',
+          text: "ID",
+          align: "start",
+          sortable: true,
+          value: "mapping_set_id"
+        },
+        {
+          value: "mapping_set_group",
+          text: "Group",
           sortable: true
         },
         {
-          key: 'mapping_set_group',
-          label: 'Group',
+          value: "registry_title",
+          text: "Title",
           sortable: true
         },
         {
-          key: 'registry_title',
-          label: 'Title',
+          value: "license",
+          text: "License",
           sortable: true
         },
         {
-          key: 'license',
-          label: 'License',
+          value: "mapping_provider",
+          text: "Mapping Provider",
           sortable: true
         },
         {
-          key: 'mapping_provider',
-          title: 'Mapping Provider',
-          sortable: true
-        },
-        {
-          key: 'mapping_set_description',
-          title: 'Mapping Set Description',
+          value: "mapping_set_description",
+          text: "Mapping Set Description",
           sortable: true
         }
       ]
-    }
+    };
   },
-  mounted () {
+  // methods: {
+  //   filter(value, search, item) {
+  //     return (
+  //       value != null &&
+  //       search != null &&
+  //       typeof value === "string" &&
+  //       value.toString().indexOf(search) !== -1
+  //     );
+  //   }
+  // },
+  mounted() {
     const papaConf = {
       header: true,
-      delimiter: '\t',
+      delimiter: "\t",
       skipEmptyLines: true
-    }
-    const startByValue = (path, obj = self, prefix = '') => {
+    };
+    const startByValue = (path, obj = self, prefix = "") => {
       try {
-        const properties = Array.isArray(path) ? path : path.split('.')
+        const properties = Array.isArray(path) ? path : path.split(".");
         const ret = properties.reduce((prev, curr) => {
-          return obj.filter((e) => {
-            const values = Object.values(e)[0]
-            const x = (values.startsWith(prev) || values.startsWith(curr))
-            return x
-          })
-        })
-        return Object.values(ret[ret.length - 1])[0].replace(prefix, '')
+          return obj.filter(e => {
+            const values = Object.values(e)[0];
+            const x = values.startsWith(prev) || values.startsWith(curr);
+            return x;
+          });
+        });
+        return Object.values(ret[ret.length - 1])[0].replace(prefix, "");
       } catch (err) {
-        return ''
+        return "";
       }
-    }
-    axios.get('https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mapping-server.yml')
+    };
+    axios
+      .get(
+        "https://raw.githubusercontent.com/mapping-commons/mapping-commons.github.io/main/mapping-server.yml"
+      )
       .then(response => {
-        const registryList = YAML.parse(response.data)
-        registryList.registries = registryList.registries || []
+        const registryList = YAML.parse(response.data);
+        registryList.registries = registryList.registries || [];
         registryList.registries.forEach(registryEntry => {
           axios.get(registryEntry.uri).then(response => {
-            const registry = YAML.parse(response.data)
-            registry.mappings = registry.mappings || []
+            const registry = YAML.parse(response.data);
+            registry.mappings = registry.mappings || [];
             registry.mapping_set_references.forEach(mapping => {
               axios.get(mapping.mapping_set_id).then(response => {
                 Papa.parse(response.data, {
                   ...papaConf,
-                  complete: (tsv) => {
+                  complete: tsv => {
                     const tsvparsed = {
-                      license: startByValue('# curie_map.# license: ', tsv.data, '# license: '),
-                      creator_id: startByValue('# creator_id:.', tsv.data, '# creator_id: '),
-                      mapping_provider: startByValue('# curie_map.# mapping_provider:', tsv.data, '# mapping_provider: '),
-                      mapping_set_description: startByValue('# curie_map.# mapping_set_description:', tsv.data, '# mapping_set_description: ')
-                    }
-                    const obj = Object.assign({}, tsvparsed, mapping, registry)
-                    this.mappings.push(obj)
+                      license: startByValue(
+                        "# curie_map.# license: ",
+                        tsv.data,
+                        "# license: "
+                      ),
+                      creator_id: startByValue(
+                        "# creator_id:.",
+                        tsv.data,
+                        "# creator_id: "
+                      ),
+                      mapping_provider: startByValue(
+                        "# curie_map.# mapping_provider:",
+                        tsv.data,
+                        "# mapping_provider: "
+                      ),
+                      mapping_set_description: startByValue(
+                        "# curie_map.# mapping_set_description:",
+                        tsv.data,
+                        "# mapping_set_description: "
+                      )
+                    };
+                    const obj = Object.assign({}, tsvparsed, mapping, registry);
+                    this.mappings.push(obj);
                   }
-                })
-              })
-            })
-          })
-        })
-      })
+                });
+              });
+            });
+          });
+        });
+      });
   }
-
-}
+};
 </script>
 
 <style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
-    margin-top: 60px;
-    margin-left: 15px;
-    margin-right: 15px;
+#app {
+  .v-data-table-header th {
+    font-size: 16px;
   }
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
 </style>
