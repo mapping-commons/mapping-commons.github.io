@@ -5,3 +5,7 @@ registries:
     uri: https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/registry.yml
   - id: disease
     uri: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings.yml
+  - id: monarch
+    uri: https://raw.githubusercontent.com/monarch-initiative/monarch-mapping-commons/main/registry.yml
+  - id: c-path
+    uri: https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/registry.yml
