@@ -72,7 +72,7 @@ export default {
           sortable: true
         },
         {
-          value: "registry_title",
+          value: "mapping_set_title",
           text: "Title",
           sortable: true
         },
