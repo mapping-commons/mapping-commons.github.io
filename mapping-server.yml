@@ -1,5 +1,5 @@
 iri: https://w3id.org/mapping-commons/server
-title: Mapping Commons Registry Server
+title: Mapping Commons Registry Server (Under Construction)
 registries:
   - id: mh_mapping_initiative
     uri: https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/registry.yml
