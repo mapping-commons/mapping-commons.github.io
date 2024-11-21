@@ -68,6 +68,7 @@ def prepare_mapping_registry(registry_file, output_file):
             mapping_set_title = mapping_table.metadata.get("mapping_set_title", mapping_set_id)
             mapping_set_description = mapping_table.metadata.get("mapping_set_description", "No description available")
             mapping_provider = mapping_table.metadata.get("mapping_provider", "No provider information available")
+            issue_tracker = mapping_table.metadata.get("issue_tracker", "No issue tracker available")
 
             # Add to registry entry
             registry_entry["mapping_sets"].append({
@@ -79,6 +80,7 @@ def prepare_mapping_registry(registry_file, output_file):
                 "mapping_set_title": mapping_set_title,
                 "mapping_set_description": mapping_set_description,
                 "mapping_provider": mapping_provider,
+                "issue_tracker": issue_tracker,
             })
 
         # Add registry entry to combined data
