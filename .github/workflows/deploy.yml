@@ -22,10 +22,6 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './table-component/package-lock.json'
 
-      # - name: Install Vue CLI globally
-      #   run: npm install -g @vue/cli-plugin-babel/preset
-      #   working-directory: ./table-component
-  
       - name: Install dependencies and build
         working-directory: ./table-component
         run: |
