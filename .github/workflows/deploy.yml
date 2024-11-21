@@ -22,27 +22,21 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './table-component/package-lock.json'
 
-      - name: Install and Build
+      - name: Install dependencies and build
+        working-directory: ./table-component
         run: |
-          npm install
-          cd ./table-component
+          npm ci
           npm run build
-        env:
-          NODE_ENV: production
 
-      - name: Copy build files
+      - name: Prepare for deployment
         run: |
-          mkdir -p ../css ../js
-          cp ./table-component/dist/css/app*.css ../css/app.css
-          cp ./table-component/dist/css/chunk-vendors*.css ../css/chunk-vendors.css
-          cp ./table-component/dist/js/app*.js ../js/app.js
-          cp ./table-component/dist/js/chunk-vendors*.js ../js/chunk-vendors.js
-
-      - name: Prepare documentation
-        run: |
-          mkdir gh-pages
+          mkdir -p gh-pages/css gh-pages/js
+          cp index.html gh-pages/
+          cp table-component/dist/css/app*.css gh-pages/css/app.css
+          cp table-component/dist/css/chunk-vendors*.css gh-pages/css/chunk-vendors.css
+          cp table-component/dist/js/app*.js gh-pages/js/app.js
+          cp table-component/dist/js/chunk-vendors*.js gh-pages/js/chunk-vendors.js
           touch gh-pages/.nojekyll
-          mv site/* ./gh-pages/
 
       - name: Deploy documentation.
         if: ${{ github.event_name == 'push' }}
