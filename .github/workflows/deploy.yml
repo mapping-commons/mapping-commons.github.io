@@ -22,27 +22,25 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './table-component/package-lock.json'
 
-      - name: Install and Build
-        run: |
-          npm install
-          npm run build
+      # - name: Install Vue CLI globally
+      #   run: npm install -g @vue/cli-plugin-babel/preset
+      #   working-directory: ./table-component
+  
+      - name: Install dependencies and build
         working-directory: ./table-component
-        env:
-          NODE_ENV: production
-
-      - name: Copy build files
         run: |
-          mkdir -p ../css ../js
-          cp ./table-component/dist/css/app*.css ../css/app.css
-          cp ./table-component/dist/css/chunk-vendors*.css ../css/chunk-vendors.css
-          cp ./table-component/dist/js/app*.js ../js/app.js
-          cp ./table-component/dist/js/chunk-vendors*.js ../js/chunk-vendors.js
+          npm ci
+          npm run build
 
-      - name: Prepare documentation
+      - name: Prepare for deployment
         run: |
-          mkdir gh-pages
+          mkdir -p gh-pages/css gh-pages/js
+          cp index.html gh-pages/
+          cp table-component/dist/css/app*.css gh-pages/css/app.css
+          cp table-component/dist/css/chunk-vendors*.css gh-pages/css/chunk-vendors.css
+          cp table-component/dist/js/app*.js gh-pages/js/app.js
+          cp table-component/dist/js/chunk-vendors*.js gh-pages/js/chunk-vendors.js
           touch gh-pages/.nojekyll
-          mv site/* ./gh-pages/
 
       - name: Deploy documentation.
         if: ${{ github.event_name == 'push' }}
