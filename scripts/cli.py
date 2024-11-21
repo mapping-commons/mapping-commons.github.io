@@ -64,7 +64,10 @@ def prepare_mapping_registry(registry_file, output_file):
 
             # Parse mapping set using SSSOM
             mapping_table = parse_sssom_table(StringIO(mapping_response.text))
-            mapping_set_version = mapping_table.metadata.get("mapping_set_version")
+            mapping_set_version = mapping_table.metadata.get("mapping_set_version", "none")
+            mapping_set_title = mapping_table.metadata.get("mapping_set_title", mapping_set_id)
+            mapping_set_description = mapping_table.metadata.get("mapping_set_description", "No description available")
+            mapping_provider = mapping_table.metadata.get("mapping_provider", "No provider information available")
 
             # Add to registry entry
             registry_entry["mapping_sets"].append({
@@ -72,7 +75,10 @@ def prepare_mapping_registry(registry_file, output_file):
                 "mapping_set_group": mapping_set.get("mapping_set_group"),
                 "registry_confidence": mapping_set.get("registry_confidence"),
                 "local_name": mapping_set.get("local_name"),
-                "mapping_set_version": mapping_set_version
+                "mapping_set_version": mapping_set_version,
+                "mapping_set_title": mapping_set_title,
+                "mapping_set_description": mapping_set_description,
+                "mapping_provider": mapping_provider,
             })
 
         # Add registry entry to combined data
