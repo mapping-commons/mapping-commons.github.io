@@ -1,0 +1,34 @@
+name: Rebuild registry files
+
+on:
+    push:
+        branches: [ main ]
+        paths:
+            - 'mapping-server.yml'
+            - 'scripts/cli.py'
+    schedule:
+        - cron: "0 0 1 * *"
+    workflow_dispatch:
+
+jobs:
+  build_registry:
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.5.3
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      - name: Rebuild all registry files
+        env:
+          DEFAULT_BRANCH: main
+        run: make all -B
+    
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Update registry files
+          title: 'Update all registry files'
+          body: |
+            Updates all registry release files.
+          assignees: matentzn
