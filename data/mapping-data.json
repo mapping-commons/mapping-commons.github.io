@@ -15,9 +15,11 @@
                     "registry_confidence": 0.9,
                     "local_name": "mp_hp_eye_impc.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The IMPC Mouse Morphology Mappings: Eye Morphology Test",
-                    "mapping_provider": "https://www.mousephenotype.org"
+                    "mapping_provider": "https://www.mousephenotype.org",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
@@ -25,9 +27,11 @@
                     "registry_confidence": null,
                     "local_name": "mp_hp_hwt_impc.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The IMPC Mouse Morphology Mappings: Heart Weight Test",
-                    "mapping_provider": "https://www.mousephenotype.org"
+                    "mapping_provider": "https://www.mousephenotype.org",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
@@ -35,9 +39,11 @@
                     "registry_confidence": null,
                     "local_name": "mp_hp_owt_impc.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The IMPC Mouse Morphology Mappings: Organ Weight Test",
-                    "mapping_provider": "https://www.mousephenotype.org"
+                    "mapping_provider": "https://www.mousephenotype.org",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
@@ -45,9 +51,11 @@
                     "registry_confidence": null,
                     "local_name": "ma_uberon_pat_impc.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (Anatomy)",
-                    "mapping_provider": "https://www.mousephenotype.org"
+                    "mapping_provider": "https://www.mousephenotype.org",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
@@ -55,9 +63,11 @@
                     "registry_confidence": null,
                     "local_name": "mp_hp_pat_impc.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (Phenotype)",
-                    "mapping_provider": "https://www.mousephenotype.org"
+                    "mapping_provider": "https://www.mousephenotype.org",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
@@ -65,9 +75,11 @@
                     "registry_confidence": null,
                     "local_name": "pato_hp_pat_impc.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (PATO)",
-                    "mapping_provider": "https://www.mousephenotype.org"
+                    "mapping_provider": "https://www.mousephenotype.org",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
@@ -75,9 +87,11 @@
                     "registry_confidence": null,
                     "local_name": "mp_hp_xry_impc.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The IMPC Mouse Morphology Mappings: X-ray Test",
-                    "mapping_provider": "https://www.mousephenotype.org"
+                    "mapping_provider": "https://www.mousephenotype.org",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
@@ -85,9 +99,11 @@
                     "registry_confidence": null,
                     "local_name": "hp_doid_pistoia.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The Pistoia Ontology Mappings: hp_doid",
-                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/"
+                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
@@ -95,9 +111,11 @@
                     "registry_confidence": 0.4,
                     "local_name": "mp_doid_pistoia.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The Pistoia Ontology Mappings: mp_doid",
-                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/"
+                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
@@ -105,9 +123,11 @@
                     "registry_confidence": null,
                     "local_name": "mp_hp_pistoia.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The Pistoia Ontology Mappings: mp_hp",
-                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/"
+                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
@@ -115,9 +135,11 @@
                     "registry_confidence": null,
                     "local_name": "ordo_doid_pistoia.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The Pistoia Ontology Mappings: ordo_doid",
-                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/"
+                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
@@ -125,9 +147,11 @@
                     "registry_confidence": null,
                     "local_name": "ordo_mp_pistoia.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The Pistoia Ontology Mappings: ordo_mp",
-                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/"
+                    "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
@@ -137,7 +161,9 @@
                     "mapping_set_version": "none",
                     "mapping_set_title": "All mappings of MP terms to HPO terms generated by MGI",
                     "mapping_set_description": "Consolidated list of all HPO to MP mappings done by MGI. In the comments section the project that was the source of the list is listed. Some terms came from more than one source. The KidsFirst list was a list of HPO terms provided by the KidsFirst team from the set of terms used for patients in their cohorts. The scoliosis, Alzheimer, cleft palate, Down Syndrome, CHARGE Syndrome, Cornelia De Lange Syndrome, and COVID term sets were generated by MGI for symptoms or phenotypes associated with the disease. For the COVID set the references for each sign or symptom are listed in the Other column. Initially the mapping dates for the KidsFirst mappings were not tracked, so these were given the date of when we received the file (5/27/21).  The scoliosis, cleft palate, Down Syndrome, CHARGE Syndrome, and Cornelia De Lange Syndrome sets consist of MP terms that are associated with mouse models of scoliosis. For Down Syndrome, CHARGE Syndrome, and Cornelia De Lange Syndrome HPO terms associated with each disease were also pulled from the HPO files for mapping. The Alzheimer and COVID sets were created by identifying symptoms and signs for patients from the literature then identifying the relevant MP and HP terms and finally mapping the identified terms to terms in the other ontology. Use of skos mappings terms: exact match: MP term is the same as the HPO term, ignoring that the HP term applies only to humans; broad match: HPO term covers more than the MP term, ignoring the species restriction; narrow match: HPO term is more restricted than the MP term; related match: MP term and HPO term share some similarity but would not have a parent-child relation in a shared ontology.",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/licenses/by/4.0/"
                 }
             ]
         },
@@ -154,9 +180,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "http://purl.obolibrary.org/obo/mondo/releases/2024-11-05/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
-                    "mapping_set_title": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 }
             ]
         },
@@ -173,9 +201,11 @@
                     "registry_confidence": null,
                     "local_name": "mondo.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://w3id.org/sssom/license/unspecified"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/mesh_chebi_biomappings.sssom.tsv",
@@ -183,9 +213,11 @@
                     "registry_confidence": null,
                     "local_name": "mesh_chebi_biomappings.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/mesh_chebi_biomappings.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://w3id.org/sssom/license/unspecified"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/gene_mappings.sssom.tsv",
@@ -193,9 +225,11 @@
                     "registry_confidence": null,
                     "local_name": "gene_mappings.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/gene_mappings.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://w3id.org/sssom/license/unspecified"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/hp_mesh.sssom.tsv",
@@ -203,9 +237,11 @@
                     "registry_confidence": null,
                     "local_name": "hp_mesh.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/hp_mesh.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://w3id.org/sssom/license/unspecified"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/umls_hp.sssom.tsv",
@@ -213,9 +249,11 @@
                     "registry_confidence": null,
                     "local_name": "umls_hp.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/umls_hp.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://w3id.org/sssom/license/unspecified"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/upheno-cross-species.sssom.tsv",
@@ -223,9 +261,11 @@
                     "registry_confidence": null,
                     "local_name": "upheno-cross-species.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/upheno-cross-species.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "The official uPheno cross-species mappings.",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/upheno-species-independent.sssom.tsv",
@@ -233,9 +273,11 @@
                     "registry_confidence": null,
                     "local_name": "upheno-species-independent.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/upheno-species-independent.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://w3id.org/sssom/license/unspecified"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/uberon.sssom.tsv",
@@ -243,9 +285,11 @@
                     "registry_confidence": null,
                     "local_name": "uberon.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/uberon.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "http://creativecommons.org/licenses/by/3.0/"
                 },
                 {
                     "mapping_set_id": "http://w3id.org/sssom/commons/monarch/nbo-go.sssom.tsv",
@@ -253,9 +297,11 @@
                     "registry_confidence": null,
                     "local_name": "nbo-go.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "http://w3id.org/sssom/commons/monarch/nbo-go.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://w3id.org/sssom/license/unspecified"
                 },
                 {
                     "mapping_set_id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -263,9 +309,11 @@
                     "registry_confidence": null,
                     "local_name": "mondo_hasdbxref_hp.sssom.tsv",
                     "mapping_set_version": "http://purl.obolibrary.org/obo/mondo/releases/2024-11-05/mappings/mondo_hasdbxref_hp.sssom.tsv",
-                    "mapping_set_title": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv",
@@ -273,9 +321,11 @@
                     "registry_confidence": null,
                     "local_name": "mondo_hp_lexical.sssom.tsv",
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "https://monarchinitiative.org/"
+                    "mapping_provider": "https://monarchinitiative.org/",
+                    "issue_tracker": "https://github.com/mapping-commons/disease-mappings/issues",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 }
             ]
         },
@@ -292,9 +342,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "All C-Path generated mappings of OBO terms to OMOP terms",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/licenses/by-nc/4.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
@@ -302,9 +354,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "Inversion of the C-Path generated OBO to OMOP mappings",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/licenses/by-nc/4.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv",
@@ -312,9 +366,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "C-Path generated mappings of OBO to OMOP terms: FARS COA",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/licenses/by-nc/4.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv",
@@ -322,9 +378,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "none",
-                    "mapping_set_title": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "Inversion of the C-Path generated OBO to OMOP mappings: FARS COA",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/licenses/by-nc/4.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
@@ -332,9 +390,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "V1.5",
-                    "mapping_set_title": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
@@ -342,9 +402,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "V1.1",
-                    "mapping_set_title": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
@@ -352,9 +414,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "V1.1",
-                    "mapping_set_title": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 },
                 {
                     "mapping_set_id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -362,9 +426,11 @@
                     "registry_confidence": null,
                     "local_name": null,
                     "mapping_set_version": "http://purl.obolibrary.org/obo/mondo/releases/2024-11-05/mappings/mondo_hasdbxref_hp.sssom.tsv",
-                    "mapping_set_title": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+                    "mapping_set_title": "No title available",
                     "mapping_set_description": "No description available",
-                    "mapping_provider": "No provider information available"
+                    "mapping_provider": "No provider information available",
+                    "issue_tracker": "No issue tracker available",
+                    "license": "https://creativecommons.org/publicdomain/zero/1.0/"
                 }
             ]
         }
