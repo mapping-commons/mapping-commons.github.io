@@ -1,94 +1,1190 @@
-{
-    "creator_id": "MONDO:8000015",
-    "homepage": "https://github.com/monarch-initiative/monarch-mapping-commons",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "local_name": "mondo_hp_lexical.sssom.tsv",
-    "mapping_provider": "https://monarchinitiative.org/",
-    "mapping_registry_description": "A collection of the SSSOM-format mappings used for the Monarch Initiative knowledge graph",
-    "mapping_registry_id": "https://w3id.org/sssom/commons/monarch",
-    "mapping_registry_title": "Monarch Mapping Commons",
-    "mapping_set_confidence": "0.8",
-    "mapping_set_description": "",
-    "mapping_set_group": "disease_mappings",
-    "mapping_set_id": "https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv",
-    "mapping_set_references": [
+[
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MONDO:8000015",
+      "mapping_provider": "https://monarchinitiative.org/",
+      "mapping_set_description": "",
+      "mapping_set_id": "https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv",
+      "mapping_set_group": "disease_mappings",
+      "local_name": "mondo_hp_lexical.sssom.tsv",
+      "mapping_set_confidence": "0.8",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/monarch",
+      "mapping_registry_title": "Monarch Mapping Commons",
+      "mapping_registry_description": "A collection of the SSSOM-format mappings used for the Monarch Initiative knowledge graph",
+      "homepage": "https://github.com/monarch-initiative/monarch-mapping-commons",
+      "mapping_set_references": [
         {
-            "local_name": "mondo.sssom.tsv",
-            "mapping_set_confidence": "0.99",
-            "mapping_set_group": "disease_mappings",
-            "mapping_set_id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
-            "other": {
-                "local_id": "mondo"
-            }
+          "mapping_set_id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
+          "mapping_set_group": "disease_mappings",
+          "local_name": "mondo.sssom.tsv",
+          "mapping_set_confidence": "0.99",
+          "other": {
+            "local_id": "mondo"
+          }
         },
         {
-            "local_name": "mesh_chebi_biomappings.sssom.tsv",
-            "mapping_set_confidence": "0.9",
-            "mapping_set_group": "chemical_mappings",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/mesh_chebi_biomappings.sssom.tsv",
-            "mirror_from": "https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/mesh_chebi_biomappings.sssom.tsv",
+          "mapping_set_group": "chemical_mappings",
+          "local_name": "mesh_chebi_biomappings.sssom.tsv",
+          "mirror_from": "https://raw.githubusercontent.com/biopragmatics/biomappings/master/docs/_data/sssom/biomappings.sssom.tsv",
+          "mapping_set_confidence": "0.9"
         },
         {
-            "local_name": "gene_mappings.sssom.tsv",
-            "mapping_set_confidence": "0.9",
-            "mapping_set_group": "gene_mappings",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/gene_mappings.sssom.tsv",
-            "mirror_from": "https://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/gene_mappings.sssom.tsv",
+          "mapping_set_group": "gene_mappings",
+          "local_name": "gene_mappings.sssom.tsv",
+          "mirror_from": "https://data.monarchinitiative.org/monarch-gene-mapping/latest/gene_mappings.sssom.tsv",
+          "mapping_set_confidence": "0.9"
         },
         {
-            "local_name": "hp_mesh.sssom.tsv",
-            "mapping_set_confidence": "0.9",
-            "mapping_set_group": "phenotype",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/hp_mesh.sssom.tsv",
-            "mirror_from": "https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/hp_mesh.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/hp_mesh.sssom.tsv",
+          "mapping_set_group": "phenotype",
+          "local_name": "hp_mesh.sssom.tsv",
+          "mirror_from": "https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/hp_mesh.sssom.tsv",
+          "mapping_set_confidence": "0.9"
         },
         {
-            "local_name": "umls_hp.sssom.tsv",
-            "mapping_set_confidence": "0.9",
-            "mapping_set_group": "phenotype",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/umls_hp.sssom.tsv",
-            "mirror_from": "https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/umls_hp.sssom.tsv",
+          "mapping_set_group": "phenotype",
+          "local_name": "umls_hp.sssom.tsv",
+          "mirror_from": "https://raw.githubusercontent.com/monarch-initiative/umls-ingest/main/src/umls_ingest/mappings/umls_hp.sssom.tsv",
+          "mapping_set_confidence": "0.9"
         },
         {
-            "local_name": "upheno-cross-species.sssom.tsv",
-            "mapping_set_confidence": "1",
-            "mapping_set_group": "phenotype",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/upheno-cross-species.sssom.tsv",
-            "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-cross-species.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/upheno-cross-species.sssom.tsv",
+          "mapping_set_group": "phenotype",
+          "local_name": "upheno-cross-species.sssom.tsv",
+          "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-cross-species.sssom.tsv",
+          "mapping_set_confidence": "1"
         },
         {
-            "local_name": "upheno-species-independent.sssom.tsv",
-            "mapping_set_confidence": "1",
-            "mapping_set_group": "phenotype",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/upheno-species-independent.sssom.tsv",
-            "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-species-independent.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/upheno-species-independent.sssom.tsv",
+          "mapping_set_group": "phenotype",
+          "local_name": "upheno-species-independent.sssom.tsv",
+          "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/upheno-species-independent.sssom.tsv",
+          "mapping_set_confidence": "1"
         },
         {
-            "local_name": "uberon.sssom.tsv",
-            "mapping_set_confidence": "1",
-            "mapping_set_group": "phenotype",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/uberon.sssom.tsv",
-            "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/uberon.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/uberon.sssom.tsv",
+          "mapping_set_group": "phenotype",
+          "local_name": "uberon.sssom.tsv",
+          "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/uberon.sssom.tsv",
+          "mapping_set_confidence": "1"
         },
         {
-            "local_name": "nbo-go.sssom.tsv",
-            "mapping_set_confidence": "1",
-            "mapping_set_group": "phenotype",
-            "mapping_set_id": "http://w3id.org/sssom/commons/monarch/nbo-go.sssom.tsv",
-            "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/nbo-go.sssom.tsv"
+          "mapping_set_id": "http://w3id.org/sssom/commons/monarch/nbo-go.sssom.tsv",
+          "mapping_set_group": "phenotype",
+          "local_name": "nbo-go.sssom.tsv",
+          "mirror_from": "https://raw.githubusercontent.com/obophenotype/upheno-dev/refs/heads/master/src/mappings/nbo-go.sssom.tsv",
+          "mapping_set_confidence": "1"
         },
         {
-            "local_name": "mondo_hasdbxref_hp.sssom.tsv",
-            "mapping_set_confidence": "0.9",
-            "mapping_set_group": "disease_mappings",
-            "mapping_set_id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv"
+          "mapping_set_id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+          "mapping_set_group": "disease_mappings",
+          "local_name": "mondo_hasdbxref_hp.sssom.tsv",
+          "mapping_set_confidence": "0.9"
         },
         {
-            "local_name": "mondo_hp_lexical.sssom.tsv",
-            "mapping_set_confidence": "0.8",
-            "mapping_set_group": "disease_mappings",
-            "mapping_set_id": "https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv"
+          "mapping_set_id": "https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv",
+          "mapping_set_group": "disease_mappings",
+          "local_name": "mondo_hp_lexical.sssom.tsv",
+          "mapping_set_confidence": "0.8"
         }
-    ],
-    "mappings": []
-}
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MP:0012122",
+      "mapping_provider": "https://www.mousephenotype.org",
+      "mapping_set_description": "'The IMPC Mouse Morphology Mappings: Eye Morphology Test'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+      "mapping_set_group": "impc_mouse_morphology",
+      "registry_confidence": 0.9,
+      "local_name": "mp_hp_eye_impc.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MP:0004357",
+      "mapping_provider": "https://www.mousephenotype.org",
+      "mapping_set_description": "'The IMPC Mouse Morphology Mappings: Heart Weight Test'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+      "mapping_set_group": "impc_mouse_morphology",
+      "local_name": "mp_hp_hwt_impc.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MP:0005631",
+      "mapping_provider": "https://www.mousephenotype.org",
+      "mapping_set_description": "'The IMPC Mouse Morphology Mappings: Organ Weight Test'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+      "mapping_set_group": "impc_mouse_morphology",
+      "local_name": "mp_hp_owt_impc.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MA:0003148",
+      "mapping_provider": "https://www.mousephenotype.org",
+      "mapping_set_description": "'The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+      "mapping_set_group": "impc_mouse_morphology",
+      "local_name": "ma_uberon_pat_impc.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MP:0013129",
+      "mapping_provider": "https://www.mousephenotype.org",
+      "mapping_set_description": "'The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+      "mapping_set_group": "impc_mouse_morphology",
+      "local_name": "mp_hp_pat_impc.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "PATO:0002416",
+      "mapping_provider": "https://www.mousephenotype.org",
+      "mapping_set_description": "'The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+      "mapping_set_group": "impc_mouse_morphology",
+      "local_name": "pato_hp_pat_impc.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MP:0010102",
+      "mapping_provider": "https://www.mousephenotype.org",
+      "mapping_set_description": "'The IMPC Mouse Morphology Mappings: X-ray Test'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+      "mapping_set_group": "impc_mouse_morphology",
+      "local_name": "mp_hp_xry_impc.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "HP:0500062",
+      "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+      "mapping_set_description": "'The Pistoia Ontology Mappings: hp_doid'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+      "mapping_set_group": "pistoia_mappings",
+      "local_name": "hp_doid_pistoia.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MP:0030449",
+      "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+      "mapping_set_description": "'The Pistoia Ontology Mappings: mp_doid'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+      "mapping_set_group": "pistoia_mappings",
+      "registry_confidence": 0.4,
+      "local_name": "mp_doid_pistoia.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "MP:3000005",
+      "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+      "mapping_set_description": "'The Pistoia Ontology Mappings: mp_hp'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+      "mapping_set_group": "pistoia_mappings",
+      "local_name": "mp_hp_pistoia.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "orphanet.ordo:99991",
+      "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+      "mapping_set_description": "'The Pistoia Ontology Mappings: ordo_doid'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+      "mapping_set_group": "pistoia_mappings",
+      "local_name": "ordo_doid_pistoia.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "creator_id": "orphanet.ordo:99867",
+      "mapping_provider": "https://www.pistoiaalliance.org/projects/current-projects/ontologies-mapping/",
+      "mapping_set_description": "'The Pistoia Ontology Mappings: ordo_mp'",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+      "mapping_set_group": "pistoia_mappings",
+      "local_name": "ordo_mp_pistoia.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    },
+    {
+      "license": "",
+      "creator_id": "HP:0011017",
+      "mapping_provider": "",
+      "mapping_set_description": "",
+      "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+      "mapping_set_group": "mgi_mappings",
+      "local_name": "mp_hp_mgi_all.sssom.tsv",
+      "mapping_registry_id": "https://w3id.org/sssom/commons/mouse-human",
+      "registry_title": "Mouse Human Mapping Initiative",
+      "registry_description": "Mouse Human Mapping Initiative",
+      "homepage": "https://github.com/mapping-commons/mh_mapping_initiative",
+      "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+      "mapping_set_references": [
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "registry_confidence": 0.9,
+          "local_name": "mp_hp_eye_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_hwt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_owt_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "ma_uberon_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "pato_hp_pat_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+          "mapping_set_group": "impc_mouse_morphology",
+          "local_name": "mp_hp_xry_impc.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "hp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "registry_confidence": 0.4,
+          "local_name": "mp_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "mp_hp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_doid_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+          "mapping_set_group": "pistoia_mappings",
+          "local_name": "ordo_mp_pistoia.sssom.tsv"
+        },
+        {
+          "mapping_set_id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+          "mapping_set_group": "mgi_mappings",
+          "local_name": "mp_hp_mgi_all.sssom.tsv"
+        }
+      ],
+      "mappings": []
+    }
+]
