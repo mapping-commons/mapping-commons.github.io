@@ -9,3 +9,5 @@ registries:
     uri: https://raw.githubusercontent.com/monarch-initiative/monarch-mapping-commons/main/registry.yml
   - id: c-path
     uri: https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/registry.yml
+  - id: mesh-mappings
+    uri: https://raw.githubusercontent.com/mapping-commons/mesh-mappings/main/mappings.yml
