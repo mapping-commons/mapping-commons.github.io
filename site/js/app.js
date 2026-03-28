@@ -295,97 +295,114 @@
     container.innerHTML = pageSpecs.map((spec) => renderCard(spec)).join("");
   }
 
+  function renderAgent(agent) {
+    if (!agent) return null;
+    var parts = [];
+    if (agent.name) parts.push(escapeHtml(agent.name));
+    if (agent.orcid) parts.push('<span class="detail-secondary">' + escapeHtml(agent.orcid) + '</span>');
+    if (agent.affiliation) parts.push('<span class="detail-secondary">' + escapeHtml(agent.affiliation) + '</span>');
+    if (agent.ror_id) parts.push('<span class="detail-secondary">' + escapeHtml(agent.ror_id) + '</span>');
+    if (agent.url) parts.push(renderUrl(agent.url));
+    if (agent.version) parts.push('<span class="detail-secondary">v' + escapeHtml(agent.version) + '</span>');
+    if (agent.repository_url) parts.push(renderUrl(agent.repository_url));
+    if (parts.length === 0 && agent.id) parts.push(escapeHtml(agent.id));
+    return parts.length ? parts.join(" ") : null;
+  }
+
+  function renderSource(source) {
+    if (!source) return null;
+    var parts = [];
+    var label = source.name || source.id || null;
+    if (label) parts.push('<strong>' + escapeHtml(label) + '</strong>');
+    if (source.version) parts.push('v' + escapeHtml(source.version));
+    if (source.type) parts.push('<span class="badge badge-type badge-sm">' + escapeHtml(source.type) + '</span>');
+    if (source.content_url) parts.push(renderUrl(source.content_url));
+    if (source.documentation) parts.push(renderUrl(source.documentation, "docs"));
+    if (source.content_type) parts.push('<span class="detail-secondary">' + escapeHtml(source.content_type) + '</span>');
+    if (source.metadata_url) parts.push(renderUrl(source.metadata_url, "metadata"));
+    return parts.length ? parts.join(" ") : null;
+  }
+
+  function renderUrl(url, label) {
+    if (!url) return "";
+    var display = label || url;
+    return '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener" class="detail-link">' +
+      escapeHtml(display) + '</a>';
+  }
+
+  function renderLicenseBadge(spec) {
+    var licenseInfo = parseLicense(spec.license);
+    if (!licenseInfo) return "";
+    if (licenseInfo.iconUrl) {
+      var img = '<img src="' + escapeHtml(licenseInfo.iconUrl) +
+        '" alt="' + escapeHtml(licenseInfo.label) +
+        '" class="cc-icon" title="' + escapeHtml(licenseInfo.label) + '">';
+      return licenseInfo.url
+        ? '<a href="' + escapeHtml(licenseInfo.url) + '" target="_blank" rel="noopener" class="cc-link">' + img + '</a>'
+        : img;
+    }
+    return '<span class="badge badge-license">' + escapeHtml(licenseInfo.label) + '</span>';
+  }
+
   function renderCard(spec) {
-    const title = escapeHtml(spec.name || spec.id || "Untitled");
-    const typeBadge = spec.type
+    var title = escapeHtml(spec.name || spec.id || "Untitled");
+    var typeBadge = spec.type
       ? '<span class="badge badge-type">' + escapeHtml(spec.type) + "</span>"
       : "";
-    const licenseInfo = parseLicense(spec.license);
-    var licenseBadge = "";
-    if (licenseInfo) {
-      if (licenseInfo.iconUrl) {
-        var img = '<img src="' + escapeHtml(licenseInfo.iconUrl) +
-          '" alt="' + escapeHtml(licenseInfo.label) +
-          '" class="cc-icon" title="' + escapeHtml(licenseInfo.label) + '">';
-        licenseBadge = licenseInfo.url
-          ? '<a href="' + escapeHtml(licenseInfo.url) + '" target="_blank" rel="noopener" class="cc-link">' + img + '</a>'
-          : img;
-      } else {
-        licenseBadge = '<span class="badge badge-license">' + escapeHtml(licenseInfo.label) + '</span>';
-      }
-    }
+    var licenseBadge = renderLicenseBadge(spec);
 
-    const subjName =
-      spec.subject_source && spec.subject_source.name
-        ? spec.subject_source.name
-        : "";
-    const objName =
-      spec.object_source && spec.object_source.name
-        ? spec.object_source.name
-        : "";
-    const sourcesHtml =
-      subjName || objName
-        ? '<div class="result-card-sources">' +
-          '<span class="source-name">' +
-          escapeHtml(subjName) +
-          "</span>" +
-          (subjName && objName
-            ? ' <span class="arrow">&rarr;</span> '
-            : "") +
-          '<span class="source-name">' +
-          escapeHtml(objName) +
-          "</span>" +
-          "</div>"
-        : "";
-
-    const desc = spec.description
-      ? '<div class="result-card-description">' +
-        escapeHtml(truncate(spec.description, 200)) +
-        "</div>"
+    // Sources line
+    var subjLabel = spec.subject_source
+      ? (spec.subject_source.name || spec.subject_source.id || "")
       : "";
-
-    const creatorHtml =
-      spec.creator && spec.creator.name
-        ? '<span class="result-card-creator">' +
-          escapeHtml(spec.creator.name) +
-          "</span>"
-        : "";
-
-    const actions = [];
-    if (spec.content_url) {
-      actions.push(
-        '<a href="' +
-          escapeHtml(spec.content_url) +
-          '" class="action-link" target="_blank" rel="noopener">Download</a>'
-      );
+    var objLabel = spec.object_source
+      ? (spec.object_source.name || spec.object_source.id || "")
+      : "";
+    var sourcesHtml = "";
+    if (subjLabel || objLabel) {
+      sourcesHtml = '<div class="result-card-sources">' +
+        '<span class="source-name">' + escapeHtml(subjLabel) + '</span>' +
+        (subjLabel && objLabel ? ' <span class="arrow">&rarr;</span> ' : '') +
+        '<span class="source-name">' + escapeHtml(objLabel) + '</span>' +
+        '</div>';
     }
-    if (spec.documentation) {
-      actions.push(
-        '<a href="' +
-          escapeHtml(spec.documentation) +
-          '" class="action-link" target="_blank" rel="noopener">Docs</a>'
-      );
+
+    // Detail rows — all fields from the schema
+    var details = [];
+
+    function addDetail(label, html) {
+      if (html) details.push('<dt>' + label + '</dt><dd>' + html + '</dd>');
     }
-    const actionsHtml = actions.length
-      ? '<div class="result-card-actions">' + actions.join("") + "</div>"
+
+    addDetail("ID", spec.id ? renderUrl(spec.id) : null);
+    addDetail("Version", spec.version ? escapeHtml(spec.version) : null);
+    addDetail("Type", spec.type ? escapeHtml(spec.type) : null);
+    addDetail("License", spec.license ? renderLicenseBadge(spec) : null);
+    addDetail("Publication date", spec.publication_date ? escapeHtml(spec.publication_date) : null);
+    addDetail("Mapping method", spec.mapping_method ? escapeHtml(spec.mapping_method) : null);
+    addDetail("Subject source", renderSource(spec.subject_source));
+    addDetail("Object source", renderSource(spec.object_source));
+    addDetail("Creator", renderAgent(spec.creator));
+    addDetail("Author", renderAgent(spec.author));
+    addDetail("Reviewer", renderAgent(spec.reviewer));
+    addDetail("Content", spec.content_url ? renderUrl(spec.content_url) : null);
+    addDetail("Documentation", spec.documentation ? renderUrl(spec.documentation) : null);
+    addDetail("Description", spec.description ? escapeHtml(spec.description) : null);
+
+    var detailsHtml = details.length
+      ? '<div class="result-card-details">' +
+        '<dl class="detail-grid">' + details.join("") + '</dl></div>'
       : "";
 
     return (
       '<div class="result-card">' +
       '<div class="result-card-header">' +
-      '<span class="result-card-title">' +
-      title +
-      "</span>" +
-      typeBadge +
-      licenseBadge +
-      "</div>" +
+      '<span class="result-card-title">' + title + '</span>' +
+      typeBadge + licenseBadge +
+      '</div>' +
       sourcesHtml +
-      desc +
-      '<div class="result-card-meta">' +
-      creatorHtml +
-      "</div>" +
-      actionsHtml +
-      "</div>"
+      detailsHtml +
+      '</div>'
     );
   }
 

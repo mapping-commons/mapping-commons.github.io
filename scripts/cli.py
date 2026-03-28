@@ -57,24 +57,10 @@ def transform_object(transformer: ObjectTransformer, input_obj: dict, source_typ
     return None
 
 
-def enrich_spec(spec: dict, input_meta: dict,
-                registry_title: str = None, registry_homepage: str = None,
-                registry_documentation: str = None, mapping_set_id: str = None,
-                mapping_set_group: str = None) -> dict:
-    """Enrich a transformed MappingSpecification with data not carried by the transform."""
-    if not spec.get("documentation") and (registry_documentation or registry_homepage):
-        spec["documentation"] = registry_documentation or registry_homepage
+def enrich_spec(spec: dict, mapping_set_id: str = None) -> dict:
+    """Add content_url from the mapping_set_id (the actual file URL) if not already set."""
     if not spec.get("content_url") and mapping_set_id:
         spec["content_url"] = mapping_set_id
-    if registry_title and not spec.get("creator"):
-        spec["creator"] = {
-            "name": registry_title,
-            "type": "Organization",
-            "url": registry_homepage,
-        }
-    if not spec.get("mapping_method") and mapping_set_group:
-        spec["mapping_method"] = mapping_set_group
-
     return spec
 
 
@@ -113,16 +99,6 @@ def process_transform_registry(registry_path: str, linkmlmap_schema: str) -> lis
 
         result = transform_object(transformer, spec_data, "TransformationSpecification")
         if result:
-            if not result.get("type"):
-                result["type"] = "linkml-map"
-            # Set proper source names from the transform metadata
-            source_schema = spec_data.get("source_schema", "")
-            target_schema = spec_data.get("target_schema", "")
-            result["subject_source"] = {"name": os.path.basename(source_schema)}
-            result["object_source"] = {
-                "name": "FAIR Mappings Schema",
-                "content_url": "https://github.com/mapping-commons/fair-mappings-schema",
-            }
             result = {k: v for k, v in result.items() if v is not None}
             specs.append(result)
         else:
@@ -188,8 +164,6 @@ def prepare_mapping_registry(registry_file, output_file, sssom_transform, sssom_
 
         registry_data = yaml.safe_load(response.text)
         registry_title = registry_data.get("mapping_registry_title") or registry_data.get("registry_title")
-        registry_homepage = registry_data.get("homepage")
-        registry_documentation = registry_data.get("documentation")
 
         for mapping_set in registry_data.get("mapping_set_references", []):
             mapping_set_id = mapping_set.get("mapping_set_id")
@@ -200,10 +174,6 @@ def prepare_mapping_registry(registry_file, output_file, sssom_transform, sssom_
                     transformer=transformer,
                     mapping_set_id=mapping_set_id,
                     mapping_set_uri=mapping_set_uri,
-                    mapping_set_group=mapping_set.get("mapping_set_group"),
-                    registry_title=registry_title,
-                    registry_homepage=registry_homepage,
-                    registry_documentation=registry_documentation,
                 )
                 if spec:
                     specifications.append(spec)
@@ -241,7 +211,6 @@ def prepare_mapping_registry(registry_file, output_file, sssom_transform, sssom_
 
 def _process_sssom_mapping_set(
     transformer, mapping_set_id, mapping_set_uri,
-    mapping_set_group, registry_title, registry_homepage, registry_documentation,
 ) -> dict | None:
     """Fetch, parse, and transform a single SSSOM mapping set. Returns spec dict or None.
 
@@ -277,14 +246,7 @@ def _process_sssom_mapping_set(
     if not spec:
         return None
 
-    return enrich_spec(
-        spec, meta,
-        registry_title=registry_title,
-        registry_homepage=registry_homepage,
-        registry_documentation=registry_documentation,
-        mapping_set_id=mapping_set_id,
-        mapping_set_group=mapping_set_group,
-    )
+    return enrich_spec(spec, mapping_set_id=mapping_set_id)
 
 
 @cli.command()
