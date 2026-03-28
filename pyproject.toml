@@ -1,0 +1,13 @@
+[project]
+name = "mapping-commons-registry"
+version = "0.1.0"
+description = "Mapping Commons Registry - search and browse FAIR mapping specifications"
+requires-python = ">=3.10"
+dependencies = [
+    "linkml-map",
+    "fair-mappings-schema @ git+https://github.com/mapping-commons/fair-mappings-schema.git",
+    "sssom",
+    "click",
+    "pyyaml",
+    "requests",
+]

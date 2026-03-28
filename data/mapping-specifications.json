@@ -1,0 +1,387 @@
+[
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+    "description": "The IMPC Mouse Morphology Mappings: Eye Morphology Test",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "impc_mouse_morphology"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+    "description": "The IMPC Mouse Morphology Mappings: Heart Weight Test",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "impc_mouse_morphology"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+    "description": "The IMPC Mouse Morphology Mappings: Organ Weight Test",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "impc_mouse_morphology"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+    "description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (Anatomy)",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "impc_mouse_morphology"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+    "description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (Phenotype)",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "impc_mouse_morphology"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+    "description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (PATO)",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "impc_mouse_morphology"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+    "description": "The IMPC Mouse Morphology Mappings: X-ray Test",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "impc_mouse_morphology"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+    "description": "The Pistoia Ontology Mappings: hp_doid",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "pistoia_mappings"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+    "description": "The Pistoia Ontology Mappings: mp_doid",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "pistoia_mappings"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+    "description": "The Pistoia Ontology Mappings: mp_hp",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "pistoia_mappings"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+    "description": "The Pistoia Ontology Mappings: ordo_doid",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "pistoia_mappings"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+    "description": "The Pistoia Ontology Mappings: ordo_mp",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "pistoia_mappings"
+  },
+  {
+    "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+    "name": "All mappings of MP terms to HPO terms generated by MGI",
+    "description": "Consolidated list of all HPO to MP mappings done by MGI. In the comments section the project that was the source of the list is listed. Some terms came from more than one source. The KidsFirst list was a list of HPO terms provided by the KidsFirst team from the set of terms used for patients in their cohorts. The scoliosis, Alzheimer, cleft palate, Down Syndrome, CHARGE Syndrome, Cornelia De Lange Syndrome, and COVID term sets were generated by MGI for symptoms or phenotypes associated with the disease. For the COVID set the references for each sign or symptom are listed in the Other column. Initially the mapping dates for the KidsFirst mappings were not tracked, so these were given the date of when we received the file (5/27/21).  The scoliosis, cleft palate, Down Syndrome, CHARGE Syndrome, and Cornelia De Lange Syndrome sets consist of MP terms that are associated with mouse models of scoliosis. For Down Syndrome, CHARGE Syndrome, and Cornelia De Lange Syndrome HPO terms associated with each disease were also pulled from the HPO files for mapping. The Alzheimer and COVID sets were created by identifying symptoms and signs for patients from the literature then identifying the relevant MP and HP terms and finally mapping the identified terms to terms in the other ontology. Use of skos mappings terms: exact match: MP term is the same as the HPO term, ignoring that the HP term applies only to humans; broad match: HPO term covers more than the MP term, ignoring the species restriction; narrow match: HPO term is more restricted than the MP term; related match: MP term and HPO term share some similarity but would not have a parent-child relation in a shared ontology.",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/mh_mapping_initiative/blob/master/README.md",
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+    "creator": {
+      "name": "Mouse Human Mapping Initiative",
+      "type": "Organization",
+      "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+    },
+    "mapping_method": "mgi_mappings"
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/mapping-commons/disease-mappings",
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "mapping_method": "mondo"
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
+    "mapping_method": "disease_mappings"
+  },
+  {
+    "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
+    "name": "Biomappings",
+    "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
+    "version": "0.5.0-dev-528eae3f",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mesh_chebi_biomappings.sssom.tsv",
+    "mapping_method": "chemical_mappings"
+  },
+  {
+    "id": "https://w3id.org/sssom/mappings/c979fac3-4ea0-466e-9f07-767c782bf0c5",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/gene_mappings.sssom.tsv",
+    "mapping_method": "gene_mappings"
+  },
+  {
+    "id": "https://w3id.org/sssom/mappings/11cc9c2c-f621-45bd-b9d0-da99af63e090",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/hp_mesh.sssom.tsv",
+    "mapping_method": "phenotype"
+  },
+  {
+    "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/umls_hp.sssom.tsv",
+    "mapping_method": "phenotype"
+  },
+  {
+    "id": "https://data.monarchinitiative.org/mappings/upheno-cross-species.sssom.tsv",
+    "description": "The official uPheno cross-species mappings.",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/upheno-cross-species.sssom.tsv",
+    "mapping_method": "phenotype"
+  },
+  {
+    "id": "https://w3id.org/sssom/mappings/953bc698-d97d-4ef9-ba2e-1e3ce6b738ad",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/upheno-species-independent.sssom.tsv",
+    "mapping_method": "phenotype"
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/uberon/uberon-base/mappings.sssom.tsv",
+    "license": "http://creativecommons.org/licenses/by/3.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/uberon.sssom.tsv",
+    "mapping_method": "phenotype"
+  },
+  {
+    "id": "https://data.monarchinitiative.org/mappings/upheno/nbo-go.sssom.tsv",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://w3id.org/sssom/commons/monarch/nbo-go.sssom.tsv",
+    "mapping_method": "phenotype"
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "mapping_method": "disease_mappings"
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hp_lexical.sssom.tsv",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://github.com/monarch-initiative/monarch-mapping-commons",
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/disease-mappings/refs/heads/main/mappings/mondo_hp_lexical.sssom.tsv",
+    "mapping_method": "disease_mappings"
+  },
+  {
+    "id": "cpath_obo_omop",
+    "description": "All C-Path generated mappings of OBO terms to OMOP terms",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
+    "mapping_method": "cpath_mappings"
+  },
+  {
+    "id": "cpath_obo_omop_invert",
+    "description": "Inversion of the C-Path generated OBO to OMOP mappings",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
+    "mapping_method": "cpath_mappings"
+  },
+  {
+    "id": "fars_obo_omop",
+    "description": "C-Path generated mappings of OBO to OMOP terms: FARS COA",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv",
+    "mapping_method": "cpath_mappings"
+  },
+  {
+    "id": "fars_obo_omop_invert",
+    "description": "Inversion of the C-Path generated OBO to OMOP mappings: FARS COA",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv",
+    "mapping_method": "cpath_mappings"
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.7250177",
+    "version": "V1.5",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
+    "mapping_method": "omop2obo_mappings"
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.6949696",
+    "version": "V1.1",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
+    "mapping_method": "omop2obo_mappings"
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.6949858",
+    "version": "V1.1",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
+    "mapping_method": "omop2obo_mappings"
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "documentation": "https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/README.md",
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "mapping_method": "mondo_mappings"
+  },
+  {
+    "id": "https://w3id.org/linkml/transformer/sssom-to-fair-mappings",
+    "name": "SSSOM to FAIR Mappings Schema Transformation",
+    "description": "Transforms an SSSOM Mapping Set to a FAIR Mappings Schema MappingSpecification.\nThis preserves metadata elements while discarding the individual mappings,\nwhich have no equivalent in the FAIR Mappings Schema (which focuses on\nmapping specification metadata, not individual mapping assertions).\n\nKey transformations:\n- mapping_set_id \u2192 id\n- mapping_set_title \u2192 name\n- mapping_set_description \u2192 description\n- subject_source \u2192 subject_source.id\n- object_source \u2192 object_source.id\n- Sets type to 'sssom' to indicate the mapping specification type\n\nNote: Creator/author/reviewer transformations are simplified since SSSOM\nuses flat ID lists while FAIR Mappings uses structured Agent objects.",
+    "subject_source": {
+      "name": "sssom",
+      "content_url": "https://raw.githubusercontent.com/mapping-commons/sssom/refs/heads/master/src/sssom_schema/schema/sssom_schema.yaml"
+    },
+    "object_source": {
+      "name": "FAIR Mappings Schema",
+      "content_url": "https://github.com/mapping-commons/fair-mappings-schema"
+    },
+    "type": "linkml-map"
+  },
+  {
+    "id": "https://w3id.org/linkml/transformer/linkml-map-to-fair-mappings",
+    "name": "LinkML-Map to FAIR Mappings Schema Transformation",
+    "description": "Transforms a LinkML-Map TransformationSpecification to a FAIR Mappings Schema\nMappingSpecification. This preserves metadata elements while discarding the\nactual transformation rules (class_derivations, slot_derivations, etc.) which\nhave no equivalent in the FAIR Mappings Schema.",
+    "subject_source": {
+      "name": "linkml-map",
+      "content_url": "https://raw.githubusercontent.com/linkml/linkml-map/refs/heads/main/src/linkml_map/datamodel/transformer_model.yaml"
+    },
+    "object_source": {
+      "name": "FAIR Mappings Schema",
+      "content_url": "https://github.com/mapping-commons/fair-mappings-schema"
+    },
+    "type": "linkml-map"
+  }
+]

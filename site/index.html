@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapping Commons Registry</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/lunr@2.3.9/lunr.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Mapping Commons Registry</h1>
+      <p class="tagline">Search and browse FAIR mapping specifications</p>
+      <a href="https://github.com/mapping-commons/mapping-commons.github.io" class="github-link" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="facet-group" id="facet-type">
+        <h3>Mapping Type</h3>
+      </div>
+      <div class="facet-group" id="facet-source-type">
+        <h3>Source Type</h3>
+      </div>
+      <div class="facet-group" id="facet-license">
+        <h3>License</h3>
+      </div>
+      <div class="facet-group" id="facet-subject-source">
+        <h3>Subject Source</h3>
+      </div>
+      <div class="facet-group" id="facet-object-source">
+        <h3>Object Source</h3>
+      </div>
+      <div class="facet-group" id="facet-creator">
+        <h3>Creator</h3>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search mapping specifications..." autocomplete="off">
+        <div id="autocomplete-dropdown" class="autocomplete-dropdown"></div>
+      </div>
+
+      <div class="results-summary" id="results-summary"></div>
+
+      <div class="results-list" id="results-list"></div>
+
+      <nav class="pagination" id="pagination"></nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Powered by the <a href="https://github.com/mapping-commons/fair-mappings-schema" target="_blank" rel="noopener">FAIR Mappings Schema</a>. Data updated monthly.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -15,30 +15,25 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-          cache: 'npm'
-          cache-dependency-path: './table-component/package-lock.json'
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
 
-      - name: Install dependencies and build
-        working-directory: ./table-component
-        run: |
-          npm ci
-          npm run build
+      - name: Install just
+        uses: extractions/setup-just@v2
+
+      - name: Run ETL to generate data
+        run: just all
 
       - name: Prepare for deployment
         run: |
-          mkdir -p gh-pages/css gh-pages/js
-          cp index.html gh-pages/
-          cp table-component/dist/css/app*.css gh-pages/css/app.css
-          cp table-component/dist/css/chunk-vendors*.css gh-pages/css/chunk-vendors.css
-          cp table-component/dist/js/app*.js gh-pages/js/app.js
-          cp table-component/dist/js/chunk-vendors*.js gh-pages/js/chunk-vendors.js
+          mkdir -p gh-pages/css gh-pages/js gh-pages/data
+          cp site/index.html gh-pages/
+          cp site/css/style.css gh-pages/css/
+          cp site/js/app.js gh-pages/js/
+          cp data/mapping-specifications.json gh-pages/data/
           touch gh-pages/.nojekyll
 
-      - name: Deploy documentation.
+      - name: Deploy to GitHub Pages
         if: ${{ github.event_name == 'push' }}
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
