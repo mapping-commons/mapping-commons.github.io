@@ -721,8 +721,8 @@ wheels = [
 
 [[package]]
 name = "linkml-map"
-version = "0.4.0"
-source = { registry = "https://pypi.org/simple" }
+version = "0.4.0.post9.dev0+7bab107"
+source = { git = "https://github.com/linkml/linkml-map.git?rev=issue170#7bab1072e086dfd8dbe45a91de24d27b6d86c738" }
 dependencies = [
     { name = "asteval" },
     { name = "click" },
@@ -742,10 +742,6 @@ dependencies = [
     { name = "simpleeval" },
     { name = "ucumvert", version = "0.2.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "ucumvert", version = "0.3.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/a3/de/8f7fae3837de356665b0996d5134e732ea4f6524894f95a3cf3cc53a4d65/linkml_map-0.4.0.tar.gz", hash = "sha256:b79574b6c2b69728a26f87394602be781fc0a6104fa649a419131513f00f9244", size = 440201, upload-time = "2026-03-16T21:17:00.706Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/12/1c/e897fd80f1c6484c79b6317606c0b4b96da04a75dc4b2eab9b37d264f4c2/linkml_map-0.4.0-py3-none-any.whl", hash = "sha256:e95b9065f3119c788c8c10fc45249666e4000a42f97b28f19e93bc1d5c2be5f4", size = 81088, upload-time = "2026-03-16T21:16:58.965Z" },
 ]
 
 [[package]]
@@ -790,7 +786,7 @@ dependencies = [
 requires-dist = [
     { name = "click" },
     { name = "fair-mappings-schema", git = "https://github.com/mapping-commons/fair-mappings-schema.git" },
-    { name = "linkml-map" },
+    { name = "linkml-map", git = "https://github.com/linkml/linkml-map.git?rev=issue170" },
     { name = "pyyaml" },
     { name = "requests" },
     { name = "sssom" },

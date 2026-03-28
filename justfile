@@ -28,7 +28,8 @@ data: schemas
         mapping-server.yml \
         data/mapping-specifications.json \
         --sssom-transform transforms/sssom-to-fair.transformation.yaml \
-        --sssom-schema tmp/sssom-schema.yaml
+        --sssom-schema tmp/sssom-schema.yaml \
+        --linkmlmap-schema tmp/linkml-map-schema.yaml
 
 # Transform a single SSSOM instance (usage: just transform-sssom input.yaml output.yaml)
 transform-sssom input output: schemas

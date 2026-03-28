@@ -24,15 +24,47 @@
 
   // --- Helpers ---
 
-  function shortenLicense(url) {
+  // Map CC license URL to { label, icon } where icon is the CC button SVG filename
+  const CC_ICONS = {
+    "by": "by",
+    "by-sa": "by-sa",
+    "by-nd": "by-nd",
+    "by-nc": "by-nc",
+    "by-nc-sa": "by-nc-sa",
+    "by-nc-nd": "by-nc-nd",
+    "zero": "zero",
+  };
+
+  function parseLicense(url) {
     if (!url) return null;
-    const m = url.match(/creativecommons\.org\/(?:licenses|publicdomain)\/([^/]+)/);
+    // CC licenses: /licenses/<type>/<version>/ or /publicdomain/zero/<version>/
+    var m = url.match(/creativecommons\.org\/licenses\/([^/]+)\/([^/]+)/);
     if (m) {
-      const slug = m[1].toUpperCase().replace("ZERO", "0");
-      return url.includes("publicdomain") ? "CC0-" + slug : "CC-" + slug;
+      var slug = m[1].toLowerCase();
+      var ver = m[2];
+      var icon = CC_ICONS[slug];
+      return {
+        label: "CC " + slug.toUpperCase() + " " + ver,
+        url: url,
+        iconUrl: icon ? "https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/" + icon + ".svg" : null,
+      };
     }
-    if (url.includes("unspecified")) return "Unspecified";
-    return url.split("/").filter(Boolean).pop() || url;
+    m = url.match(/creativecommons\.org\/publicdomain\/zero\/([^/]+)/);
+    if (m) {
+      return {
+        label: "CC0 " + m[1],
+        url: url,
+        iconUrl: "https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/cc-zero.svg",
+      };
+    }
+    if (url.includes("unspecified")) return { label: "Unspecified", url: null, iconUrl: null };
+    var fallback = url.split("/").filter(Boolean).pop() || url;
+    return { label: fallback, url: url, iconUrl: null };
+  }
+
+  function shortenLicense(url) {
+    var parsed = parseLicense(url);
+    return parsed ? parsed.label : null;
   }
 
   function truncate(str, len) {
@@ -268,16 +300,20 @@
     const typeBadge = spec.type
       ? '<span class="badge badge-type">' + escapeHtml(spec.type) + "</span>"
       : "";
-    const licenseBadge = spec.license
-      ? '<span class="badge badge-license">' +
-        escapeHtml(shortenLicense(spec.license)) +
-        "</span>"
-      : "";
-    const versionBadge = spec.version
-      ? '<span class="badge badge-version">v' +
-        escapeHtml(spec.version) +
-        "</span>"
-      : "";
+    const licenseInfo = parseLicense(spec.license);
+    var licenseBadge = "";
+    if (licenseInfo) {
+      if (licenseInfo.iconUrl) {
+        var img = '<img src="' + escapeHtml(licenseInfo.iconUrl) +
+          '" alt="' + escapeHtml(licenseInfo.label) +
+          '" class="cc-icon" title="' + escapeHtml(licenseInfo.label) + '">';
+        licenseBadge = licenseInfo.url
+          ? '<a href="' + escapeHtml(licenseInfo.url) + '" target="_blank" rel="noopener" class="cc-link">' + img + '</a>'
+          : img;
+      } else {
+        licenseBadge = '<span class="badge badge-license">' + escapeHtml(licenseInfo.label) + '</span>';
+      }
+    }
 
     const subjName =
       spec.subject_source && spec.subject_source.name
@@ -341,7 +377,6 @@
       title +
       "</span>" +
       typeBadge +
-      versionBadge +
       licenseBadge +
       "</div>" +
       sourcesHtml +

@@ -243,9 +243,14 @@ body {
   color: #065f46;
 }
 
-.badge-version {
-  background: #fef3c7;
-  color: #92400e;
+.cc-icon {
+  height: 15px;
+  vertical-align: middle;
+}
+
+.cc-link {
+  display: inline-flex;
+  align-items: center;
 }
 
 .result-card-sources {
