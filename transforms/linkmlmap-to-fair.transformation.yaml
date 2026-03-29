@@ -40,6 +40,8 @@ class_derivations:
         populated_from: mapping_method
       documentation:
         populated_from: documentation
+      type:
+        value: "linkml_map"
       content_url:
         populated_from: content_url
       creator:
