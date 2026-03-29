@@ -4,49 +4,105 @@
     "description": "The IMPC Mouse Morphology Mappings: Eye Morphology Test",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_eye_impc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
     "description": "The IMPC Mouse Morphology Mappings: Heart Weight Test",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
     "description": "The IMPC Mouse Morphology Mappings: Organ Weight Test",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
     "description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (Anatomy)",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
     "description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (Phenotype)",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
     "description": "The IMPC Mouse Morphology Mappings: Gross Pathology & Tissue Collection Test (PATO)",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
     "description": "The IMPC Mouse Morphology Mappings: X-ray Test",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
@@ -59,7 +115,15 @@
     "object_source": {
       "id": "obo:doid"
     },
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3899
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
@@ -72,7 +136,15 @@
     "object_source": {
       "id": "obo:doid"
     },
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3899
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
@@ -85,7 +157,15 @@
     "object_source": {
       "id": "obo:hp"
     },
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3899
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
@@ -98,7 +178,15 @@
     "object_source": {
       "id": "obo:doid"
     },
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3899
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
@@ -111,7 +199,15 @@
     "object_source": {
       "id": "obo:mp"
     },
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.3899
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
@@ -125,7 +221,15 @@
     "object_source": {
       "id": "obo:hp"
     },
-    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv"
+    "content_url": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/mouse-human",
+        "name": "Mouse Human Mapping Initiative",
+        "url": "https://github.com/mapping-commons/mh_mapping_initiative"
+      }
+    ],
+    "fair_score": 0.4416
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
@@ -138,13 +242,28 @@
     "object_source": {
       "id": "infores:icd10cm"
     },
-    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv"
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/disease",
+        "url": "https://github.com/mapping-commons/disease-mappings"
+      }
+    ],
+    "fair_score": 0.4244
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv"
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3276
   },
   {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -153,32 +272,72 @@
     "version": "0.5.0-dev-528eae3f",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mesh_chebi_biomappings.sssom.tsv"
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mesh_chebi_biomappings.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.4828
   },
   {
     "id": "https://w3id.org/sssom/mappings/11cc9c2c-f621-45bd-b9d0-da99af63e090",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/hp_mesh.sssom.tsv"
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/hp_mesh.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3276
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/umls_hp.sssom.tsv"
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/umls_hp.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3276
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno-cross-species.sssom.tsv",
     "description": "The official uPheno cross-species mappings.",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/upheno-cross-species.sssom.tsv"
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/upheno-cross-species.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://w3id.org/sssom/mappings/953bc698-d97d-4ef9-ba2e-1e3ce6b738ad",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/upheno-species-independent.sssom.tsv"
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/upheno-species-independent.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3276
   },
   {
     "id": "http://purl.obolibrary.org/obo/uberon/uberon-base/mappings.sssom.tsv",
@@ -187,13 +346,29 @@
     "subject_source": {
       "id": "http://purl.obolibrary.org/obo/uberon/uberon-base.owl"
     },
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/uberon.sssom.tsv"
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/uberon.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3415
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno/nbo-go.sssom.tsv",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/nbo-go.sssom.tsv"
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/nbo-go.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3276
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -203,56 +378,120 @@
     "subject_source": {
       "id": "infores:mondo"
     },
-    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv"
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.4105
   },
   {
     "id": "cpath_obo_omop",
     "description": "All C-Path generated mappings of OBO terms to OMOP terms",
     "license": "https://creativecommons.org/licenses/by-nc/4.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv"
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "cpath_obo_omop_invert",
     "description": "Inversion of the C-Path generated OBO to OMOP mappings",
     "license": "https://creativecommons.org/licenses/by-nc/4.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv"
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "fars_obo_omop",
     "description": "C-Path generated mappings of OBO to OMOP terms: FARS COA",
     "license": "https://creativecommons.org/licenses/by-nc/4.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv"
+    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "fars_obo_omop_invert",
     "description": "Inversion of the C-Path generated OBO to OMOP mappings: FARS COA",
     "license": "https://creativecommons.org/licenses/by-nc/4.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv"
+    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.3621
   },
   {
     "id": "https://doi.org/10.5281/zenodo.7250177",
     "version": "V1.5",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv"
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.3966
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949696",
     "version": "V1.1",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv"
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.3966
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949858",
     "version": "V1.1",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv"
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.3966
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -262,28 +501,84 @@
     "subject_source": {
       "id": "infores:mondo"
     },
-    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv"
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "fair_score": 0.4105
   },
   {
-    "id": "https://w3id.org/linkml/transformer/sssom-to-fair-mappings",
+    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
     "name": "SSSOM to FAIR Mappings Schema Transformation",
     "description": "Transforms an SSSOM Mapping Set to a FAIR Mappings Schema MappingSpecification.\nThis preserves metadata elements while discarding the individual mappings,\nwhich have no equivalent in the FAIR Mappings Schema (which focuses on\nmapping specification metadata, not individual mapping assertions).\n\nKey transformations:\n- mapping_set_id \u2192 id\n- mapping_set_title \u2192 name\n- mapping_set_description \u2192 description\n- subject_source \u2192 subject_source (Source with id)\n- object_source \u2192 object_source (Source with id)\n- Sets type to 'sssom' to indicate the mapping specification type\n\nNote: Creator/author/reviewer transformations are simplified since SSSOM\nuses flat ID lists while FAIR Mappings uses structured Agent objects.",
+    "type": "linkml_map",
     "subject_source": {
       "name": "tmp/sssom-schema.yaml"
     },
     "object_source": {
       "name": "tmp/fair-mappings-schema.yaml"
-    }
+    },
+    "registries": [
+      {
+        "id": "https://w3id.org/mapping-commons/transforms",
+        "name": "Mapping Commons Transform Registry",
+        "url": "https://github.com/mapping-commons/mapping-commons.github.io"
+      }
+    ],
+    "fair_score": 0.2636
   },
   {
-    "id": "https://w3id.org/linkml/transformer/linkml-map-to-fair-mappings",
+    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings",
     "name": "LinkML-Map to FAIR Mappings Schema Transformation",
     "description": "Transforms a LinkML-Map TransformationSpecification to a FAIR Mappings Schema\nMappingSpecification. This preserves metadata elements while discarding the\nactual transformation rules (class_derivations, slot_derivations, etc.) which\nhave no equivalent in the FAIR Mappings Schema.",
+    "type": "linkml_map",
     "subject_source": {
       "name": "tmp/linkml-map-schema.yaml"
     },
     "object_source": {
       "name": "tmp/fair-mappings-schema.yaml"
-    }
+    },
+    "registries": [
+      {
+        "id": "https://w3id.org/mapping-commons/transforms",
+        "name": "Mapping Commons Transform Registry",
+        "url": "https://github.com/mapping-commons/mapping-commons.github.io"
+      }
+    ],
+    "fair_score": 0.2636
+  },
+  {
+    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings",
+    "name": "SSSOM to FAIR Mappings Schema Slot Mappings",
+    "description": "Slot-level correspondences between SSSOM Mapping Set and FAIR Mappings Schema MappingSpecification",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "registries": [
+      {
+        "id": "https://w3id.org/mapping-commons/transforms",
+        "name": "Mapping Commons Transform Registry",
+        "url": "https://github.com/mapping-commons/mapping-commons.github.io"
+      }
+    ],
+    "fair_score": 0.3276
+  },
+  {
+    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings/slot-mappings",
+    "name": "LinkML-Map to FAIR Mappings Schema Slot Mappings",
+    "description": "Slot-level correspondences between LinkML-Map TransformationSpecification and FAIR Mappings Schema MappingSpecification",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "registries": [
+      {
+        "id": "https://w3id.org/mapping-commons/transforms",
+        "name": "Mapping Commons Transform Registry",
+        "url": "https://github.com/mapping-commons/mapping-commons.github.io"
+      }
+    ],
+    "fair_score": 0.3276
   }
 ]
