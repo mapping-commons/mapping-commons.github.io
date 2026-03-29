@@ -330,6 +330,22 @@
       escapeHtml(display) + '</a>';
   }
 
+  function renderFairScore(score) {
+    if (score == null) return "";
+    var pct = Math.round(score * 100);
+    var color = pct >= 70 ? "#059669" : pct >= 40 ? "#d97706" : "#dc2626";
+    return '<span class="fair-score" title="FAIR completeness score: ' + pct + '%"' +
+      ' style="--score-color: ' + color + '">' +
+      '<svg class="fair-ring" viewBox="0 0 36 36">' +
+      '<circle cx="18" cy="18" r="15.9" fill="none" stroke="#e5e7eb" stroke-width="3"/>' +
+      '<circle cx="18" cy="18" r="15.9" fill="none" stroke="' + color + '" stroke-width="3"' +
+      ' stroke-dasharray="' + pct + ' ' + (100 - pct) + '"' +
+      ' stroke-dashoffset="25" stroke-linecap="round"/>' +
+      '</svg>' +
+      '<span class="fair-pct">' + pct + '%</span>' +
+      '</span>';
+  }
+
   function renderLicenseBadge(spec) {
     var licenseInfo = parseLicense(spec.license);
     if (!licenseInfo) return "";
@@ -349,7 +365,7 @@
     var typeBadge = spec.type
       ? '<span class="badge badge-type">' + escapeHtml(spec.type) + "</span>"
       : "";
-    var licenseBadge = renderLicenseBadge(spec);
+
 
     // Sources line
     var subjLabel = spec.subject_source
@@ -388,6 +404,13 @@
     addDetail("Content", spec.content_url ? renderUrl(spec.content_url) : null);
     addDetail("Documentation", spec.documentation ? renderUrl(spec.documentation) : null);
     addDetail("Description", spec.description ? escapeHtml(spec.description) : null);
+    if (spec.registries && spec.registries.length) {
+      var regHtml = spec.registries.map(function(r) {
+        var label = escapeHtml(r.name || r.id || "Unknown");
+        return r.url ? '<a href="' + escapeHtml(r.url) + '" target="_blank" rel="noopener" class="detail-link">' + label + '</a>' : label;
+      }).join(", ");
+      addDetail("Registries", regHtml);
+    }
 
     var detailsHtml = details.length
       ? '<div class="result-card-details">' +
@@ -398,7 +421,8 @@
       '<div class="result-card">' +
       '<div class="result-card-header">' +
       '<span class="result-card-title">' + title + '</span>' +
-      typeBadge + licenseBadge +
+      typeBadge +
+      renderFairScore(spec.fair_score) +
       '</div>' +
       sourcesHtml +
       detailsHtml +

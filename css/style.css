@@ -243,6 +243,25 @@ body {
   color: #065f46;
 }
 
+.fair-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-left: auto;
+}
+
+.fair-ring {
+  width: 28px;
+  height: 28px;
+  transform: rotate(-90deg);
+}
+
+.fair-pct {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--score-color, var(--color-text-secondary));
+}
+
 .cc-icon {
   height: 15px;
   vertical-align: middle;
