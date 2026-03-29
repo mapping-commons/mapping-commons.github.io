@@ -56,7 +56,8 @@ def _process_transform_registry(registry_path: str) -> list[dict]:
         registry = yaml.safe_load(f)
 
     info = _registry_info(registry)
-    transforms_dir = os.path.join(os.path.dirname(registry_path), "transforms")
+    base_dir = os.path.dirname(registry_path)
+    search_dirs = ["transforms", "mappings"]
     specs = []
 
     for ref in registry.get("mapping_set_references", []):
@@ -64,13 +65,22 @@ def _process_transform_registry(registry_path: str) -> list[dict]:
         if not local_name:
             continue
 
-        input_file = os.path.join(transforms_dir, local_name)
-        if not os.path.exists(input_file):
-            click.echo(f"Transform file not found: {input_file}", err=True)
+        # Find the file in one of the search directories
+        input_file = None
+        for d in search_dirs:
+            candidate = os.path.join(base_dir, d, local_name)
+            if os.path.exists(candidate):
+                input_file = candidate
+                break
+        if not input_file:
+            click.echo(f"File not found: {local_name} (searched {search_dirs})", err=True)
             continue
 
+        # Detect mapping type from file extension
+        mapping_type = "sssom" if local_name.endswith(".sssom.tsv") else "linkml_map"
+
         try:
-            spec = load_mapping(input_file, "linkml_map")
+            spec = load_mapping(input_file, mapping_type)
             spec["registries"] = [info]
             specs.append(spec)
         except Exception as e:
