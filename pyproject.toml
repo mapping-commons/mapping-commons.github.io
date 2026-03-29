@@ -4,10 +4,15 @@ version = "0.1.0"
 description = "Mapping Commons Registry - search and browse FAIR mapping specifications"
 requires-python = ">=3.10"
 dependencies = [
-    "linkml-map",
-    "fair-mappings-schema @ git+https://github.com/mapping-commons/fair-mappings-schema.git",
+    "linkml-map @ git+https://github.com/linkml/linkml-map.git@issue170",
+    "fair-mappings @ file:///Users/matentzn/ws/fair-mappings-schema",
     "sssom",
     "click",
     "pyyaml",
     "requests",
+]
+
+[tool.uv]
+override-dependencies = [
+    "linkml-map @ git+https://github.com/linkml/linkml-map.git@issue170",
 ]
