@@ -12,7 +12,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
@@ -27,7 +27,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
@@ -42,7 +42,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
@@ -57,7 +57,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
@@ -72,7 +72,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
@@ -87,7 +87,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
@@ -102,7 +102,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
@@ -123,7 +123,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3899
+    "fair_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
@@ -144,7 +144,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3899
+    "fair_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
@@ -165,7 +165,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3899
+    "fair_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
@@ -186,7 +186,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3899
+    "fair_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
@@ -207,7 +207,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3899
+    "fair_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
@@ -229,7 +229,7 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4416
+    "fair_score": 0.4675
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
@@ -249,7 +249,7 @@
         "url": "https://github.com/mapping-commons/disease-mappings"
       }
     ],
-    "fair_score": 0.4244
+    "fair_score": 0.4448
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
@@ -263,7 +263,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3276
+    "fair_score": 0.2727
   },
   {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -280,7 +280,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.4828
+    "fair_score": 0.4773
   },
   {
     "id": "https://w3id.org/sssom/mappings/11cc9c2c-f621-45bd-b9d0-da99af63e090",
@@ -294,7 +294,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3276
+    "fair_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
@@ -308,7 +308,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3276
+    "fair_score": 0.2727
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno-cross-species.sssom.tsv",
@@ -323,7 +323,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/mappings/953bc698-d97d-4ef9-ba2e-1e3ce6b738ad",
@@ -337,7 +337,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3276
+    "fair_score": 0.2727
   },
   {
     "id": "http://purl.obolibrary.org/obo/uberon/uberon-base/mappings.sssom.tsv",
@@ -354,7 +354,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3415
+    "fair_score": 0.3133
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno/nbo-go.sssom.tsv",
@@ -368,7 +368,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3276
+    "fair_score": 0.2727
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -386,7 +386,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.4105
+    "fair_score": 0.4042
   },
   {
     "id": "cpath_obo_omop",
@@ -401,7 +401,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "cpath_obo_omop_invert",
@@ -416,7 +416,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "fars_obo_omop",
@@ -431,7 +431,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "fars_obo_omop_invert",
@@ -446,7 +446,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3621
+    "fair_score": 0.3409
   },
   {
     "id": "https://doi.org/10.5281/zenodo.7250177",
@@ -461,7 +461,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3966
+    "fair_score": 0.3636
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949696",
@@ -476,7 +476,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3966
+    "fair_score": 0.3636
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949858",
@@ -491,7 +491,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3966
+    "fair_score": 0.3636
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -509,7 +509,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.4105
+    "fair_score": 0.4042
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
@@ -529,7 +529,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.2636
+    "fair_score": 0.3052
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings",
@@ -549,7 +549,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.2636
+    "fair_score": 0.3052
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings",
@@ -564,7 +564,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3276
+    "fair_score": 0.3864
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings/slot-mappings",
@@ -579,6 +579,6 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3276
+    "fair_score": 0.3864
   }
 ]
