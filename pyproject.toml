@@ -5,7 +5,7 @@ description = "Mapping Commons Registry - search and browse FAIR mapping specifi
 requires-python = ">=3.10"
 dependencies = [
     "linkml-map @ git+https://github.com/linkml/linkml-map.git@issue170",
-    "fair-mappings @ file:///Users/matentzn/ws/fair-mappings-schema",
+    "fair-mappings @ git+https://github.com/mapping-commons/fair-mappings-schema.git@add-cli",
     "sssom",
     "click",
     "pyyaml",
