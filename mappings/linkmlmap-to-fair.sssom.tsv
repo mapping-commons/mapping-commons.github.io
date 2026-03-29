@@ -1,0 +1,29 @@
+# curie_map:
+#   fair_mappings_schema: https://w3id.org/mapping-commons/fair-mappings-schema/
+#   linkmlmap: https://w3id.org/linkml/transformer/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# mapping_set_description: Slot-level correspondences between LinkML-Map TransformationSpecification
+#   and FAIR Mappings Schema MappingSpecification
+# mapping_set_id: https://w3id.org/linkml/transformer/linkml-map-to-fair-mappings/slot-mappings
+# mapping_set_title: LinkML-Map to FAIR Mappings Schema Slot Mappings
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+linkmlmap:author	author	skos:exactMatch	fair_mappings_schema:author	author	semapv:ManualMappingCuration
+linkmlmap:content_url	content_url	skos:exactMatch	fair_mappings_schema:content_url	content_url	semapv:ManualMappingCuration
+linkmlmap:creator	creator	skos:exactMatch	fair_mappings_schema:creator	creator	semapv:ManualMappingCuration
+linkmlmap:description	description	skos:exactMatch	fair_mappings_schema:description	description	semapv:ManualMappingCuration
+linkmlmap:documentation	documentation	skos:exactMatch	fair_mappings_schema:documentation	documentation	semapv:ManualMappingCuration
+linkmlmap:id	id	skos:exactMatch	fair_mappings_schema:id	id	semapv:ManualMappingCuration
+linkmlmap:license	license	skos:exactMatch	fair_mappings_schema:license	license	semapv:ManualMappingCuration
+linkmlmap:mapping_method	mapping_method	skos:exactMatch	fair_mappings_schema:mapping_method	mapping_method	semapv:ManualMappingCuration
+linkmlmap:publication_date	publication_date	skos:exactMatch	fair_mappings_schema:publication_date	publication_date	semapv:ManualMappingCuration
+linkmlmap:reviewer	reviewer	skos:exactMatch	fair_mappings_schema:reviewer	reviewer	semapv:ManualMappingCuration
+linkmlmap:source_schema	source_schema	skos:narrowMatch	fair_mappings_schema:subject_source	subject_source	semapv:ManualMappingCuration
+linkmlmap:target_schema	target_schema	skos:narrowMatch	fair_mappings_schema:object_source	object_source	semapv:ManualMappingCuration
+linkmlmap:title	title	skos:exactMatch	fair_mappings_schema:name	name	semapv:ManualMappingCuration
+linkmlmap:version	version	skos:exactMatch	fair_mappings_schema:version	version	semapv:ManualMappingCuration

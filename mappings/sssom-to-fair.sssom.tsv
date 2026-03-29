@@ -1,0 +1,23 @@
+# curie_map:
+#   fair_mappings_schema: https://w3id.org/mapping-commons/fair-mappings-schema/
+#   owl: http://www.w3.org/2002/07/owl#
+#   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+#   rdfs: http://www.w3.org/2000/01/rdf-schema#
+#   semapv: https://w3id.org/semapv/vocab/
+#   skos: http://www.w3.org/2004/02/skos/core#
+#   sssom: https://w3id.org/sssom/
+# license: https://creativecommons.org/publicdomain/zero/1.0/
+# mapping_set_description: Slot-level correspondences between SSSOM Mapping Set and
+#   FAIR Mappings Schema MappingSpecification
+# mapping_set_id: https://w3id.org/linkml/transformer/sssom-to-fair-mappings/slot-mappings
+# mapping_set_title: SSSOM to FAIR Mappings Schema Slot Mappings
+subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
+sssom:license	license	skos:exactMatch	fair_mappings_schema:license	license	semapv:ManualMappingCuration
+sssom:mapping_set_description	mapping_set_description	skos:exactMatch	fair_mappings_schema:description	description	semapv:ManualMappingCuration
+sssom:mapping_set_id	mapping_set_id	skos:exactMatch	fair_mappings_schema:id	id	semapv:ManualMappingCuration
+sssom:mapping_set_title	mapping_set_title	skos:exactMatch	fair_mappings_schema:name	name	semapv:ManualMappingCuration
+sssom:mapping_set_version	mapping_set_version	skos:exactMatch	fair_mappings_schema:version	version	semapv:ManualMappingCuration
+sssom:mapping_tool	mapping_tool	skos:exactMatch	fair_mappings_schema:mapping_method	mapping_method	semapv:ManualMappingCuration
+sssom:object_source	object_source	skos:narrowMatch	fair_mappings_schema:object_source	object_source	semapv:ManualMappingCuration
+sssom:publication_date	publication_date	skos:exactMatch	fair_mappings_schema:publication_date	publication_date	semapv:ManualMappingCuration
+sssom:subject_source	subject_source	skos:narrowMatch	fair_mappings_schema:subject_source	subject_source	semapv:ManualMappingCuration
