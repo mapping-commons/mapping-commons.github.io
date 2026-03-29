@@ -7,10 +7,18 @@ homepage: https://github.com/mapping-commons/mapping-commons.github.io
 documentation: https://github.com/mapping-commons/mapping-commons.github.io/blob/main/README.md
 
 mapping_set_references:
-  - mapping_set_id: https://w3id.org/linkml/transformer/sssom-to-fair-mappings
+  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings
     mapping_set_group: fair-mappings-transforms
     local_name: sssom-to-fair.transformation.yaml
 
-  - mapping_set_id: https://w3id.org/linkml/transformer/linkml-map-to-fair-mappings
+  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings
     mapping_set_group: fair-mappings-transforms
     local_name: linkmlmap-to-fair.transformation.yaml
+
+  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings
+    mapping_set_group: fair-mappings-slot-mappings
+    local_name: sssom-to-fair.sssom.tsv
+
+  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings/slot-mappings
+    mapping_set_group: fair-mappings-slot-mappings
+    local_name: linkmlmap-to-fair.sssom.tsv

@@ -9,7 +9,7 @@
 # license: https://creativecommons.org/publicdomain/zero/1.0/
 # mapping_set_description: Slot-level correspondences between SSSOM Mapping Set and
 #   FAIR Mappings Schema MappingSpecification
-# mapping_set_id: https://w3id.org/linkml/transformer/sssom-to-fair-mappings/slot-mappings
+# mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings
 # mapping_set_title: SSSOM to FAIR Mappings Schema Slot Mappings
 subject_id	subject_label	predicate_id	object_id	object_label	mapping_justification
 sssom:license	license	skos:exactMatch	fair_mappings_schema:license	license	semapv:ManualMappingCuration

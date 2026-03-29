@@ -1,4 +1,4 @@
-id: https://w3id.org/linkml/transformer/sssom-to-fair-mappings
+id: https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings
 title: SSSOM to FAIR Mappings Schema Transformation
 description: |-
   Transforms an SSSOM Mapping Set to a FAIR Mappings Schema MappingSpecification.
