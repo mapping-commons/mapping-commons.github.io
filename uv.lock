@@ -405,7 +405,8 @@ wheels = [
 
 [[package]]
 name = "fair-mappings"
-source = { directory = "../fair-mappings-schema" }
+version = "0.0.0.post30.dev0+fde8214"
+source = { git = "https://github.com/mapping-commons/fair-mappings-schema.git?rev=add-cli#fde8214a7991bf45f5edaf9cea87319b67442da1" }
 dependencies = [
     { name = "click" },
     { name = "linkml" },
@@ -413,25 +414,6 @@ dependencies = [
     { name = "linkml-runtime" },
     { name = "sssom" },
     { name = "sssom-schema" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "click", specifier = ">=8.0" },
-    { name = "linkml", specifier = ">=1.9.4" },
-    { name = "linkml-map", git = "https://github.com/linkml/linkml-map.git?rev=main" },
-    { name = "linkml-runtime", specifier = ">=1.9.4" },
-    { name = "sssom", specifier = ">=0.4.16" },
-    { name = "sssom-schema", specifier = ">=1.0.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "jupyter", specifier = ">=1.0.0" },
-    { name = "linkml", specifier = ">=1.9.3" },
-    { name = "mkdocs-material", specifier = ">=8.2.8" },
-    { name = "mkdocs-mermaid2-plugin", specifier = ">=1.1.1" },
-    { name = "mknotebooks", specifier = ">=0.8.0" },
 ]
 
 [[package]]
@@ -810,7 +792,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "click" },
-    { name = "fair-mappings", directory = "../fair-mappings-schema" },
+    { name = "fair-mappings", git = "https://github.com/mapping-commons/fair-mappings-schema.git?rev=add-cli" },
     { name = "linkml-map", git = "https://github.com/linkml/linkml-map.git?rev=issue170" },
     { name = "pyyaml" },
     { name = "requests" },

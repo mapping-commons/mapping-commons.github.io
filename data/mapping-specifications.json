@@ -283,10 +283,38 @@
     "fair_score": 0.4773
   },
   {
+    "id": "http://w3id.org/sssom/commons/monarch/hpo-snomed.sssom.tsv",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "type": "sssom",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/hpo-snomed.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.2727
+  },
+  {
     "id": "https://w3id.org/sssom/mappings/11cc9c2c-f621-45bd-b9d0-da99af63e090",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/hp_mesh.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.2727
+  },
+  {
+    "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -387,6 +415,26 @@
       }
     ],
     "fair_score": 0.4042
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hp_lexical.sssom.tsv",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "subject_source": {
+      "id": "http://purl.obolibrary.org/obo/mondo.owl"
+    },
+    "object_source": {
+      "id": "http://purl.obolibrary.org/obo/hp.owl"
+    },
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mondo_hp_lexical.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "fair_score": 0.3539
   },
   {
     "id": "cpath_obo_omop",
