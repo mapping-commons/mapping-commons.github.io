@@ -16,3 +16,5 @@ registries:
     url: https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/registry.yml
   - id: mesh-mappings
     url: https://raw.githubusercontent.com/mapping-commons/mesh-mappings/main/mappings.yml
+  - id: biopragmatics
+    url: https://github.com/biopragmatics/mapping-registry/raw/refs/heads/main/registry.yml
