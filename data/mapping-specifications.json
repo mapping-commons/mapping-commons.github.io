@@ -12,7 +12,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
@@ -27,7 +28,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
@@ -42,7 +44,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
@@ -57,7 +60,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
@@ -72,7 +76,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
@@ -87,7 +92,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
@@ -102,7 +108,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
@@ -123,7 +130,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
@@ -144,7 +152,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
@@ -165,7 +174,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
@@ -186,7 +196,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
@@ -207,7 +218,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
@@ -229,7 +241,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4675
+    "status": "ok",
+    "metadata_completeness_score": 0.4675
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
@@ -249,7 +262,8 @@
         "url": "https://github.com/mapping-commons/disease-mappings"
       }
     ],
-    "fair_score": 0.4448
+    "status": "ok",
+    "metadata_completeness_score": 0.4448
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
@@ -263,7 +277,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -280,7 +295,22 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.4773
+    "status": "ok",
+    "metadata_completeness_score": 0.4773
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/gene_mappings.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/gene_mappings.sssom.tsv",
+    "type": "sssom",
+    "status": "no_metadata",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/hpo-snomed.sssom.tsv",
@@ -294,7 +324,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/11cc9c2c-f621-45bd-b9d0-da99af63e090",
@@ -308,7 +339,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
@@ -322,7 +354,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
@@ -336,7 +369,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno-cross-species.sssom.tsv",
@@ -351,7 +385,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/mappings/953bc698-d97d-4ef9-ba2e-1e3ce6b738ad",
@@ -365,7 +400,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "http://purl.obolibrary.org/obo/uberon/uberon-base/mappings.sssom.tsv",
@@ -382,7 +418,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3133
+    "status": "ok",
+    "metadata_completeness_score": 0.3133
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno/nbo-go.sssom.tsv",
@@ -396,7 +433,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -414,7 +452,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.4042
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hp_lexical.sssom.tsv",
@@ -434,7 +473,139 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3539
+    "status": "ok",
+    "metadata_completeness_score": 0.3539
+  },
+  {
+    "id": "cpath_obo_omop",
+    "description": "All C-Path generated mappings of OBO terms to OMOP terms",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
+  },
+  {
+    "id": "cpath_obo_omop_invert",
+    "description": "Inversion of the C-Path generated OBO to OMOP mappings",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
+  },
+  {
+    "id": "fars_obo_omop",
+    "description": "C-Path generated mappings of OBO to OMOP terms: FARS COA",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
+  },
+  {
+    "id": "fars_obo_omop_invert",
+    "description": "Inversion of the C-Path generated OBO to OMOP mappings: FARS COA",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.7250177",
+    "version": "V1.5",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.6949696",
+    "version": "V1.1",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.6949858",
+    "version": "V1.1",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "subject_source": {
+      "id": "infores:mondo"
+    },
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -450,7 +621,8 @@
         "name": "Biopragmatics Mapping Registry"
       }
     ],
-    "fair_score": 0.4773
+    "status": "ok",
+    "metadata_completeness_score": 0.4773
   },
   {
     "id": "https://github.com/biopragmatics/bioregistry/raw/main/exports/sssom/bioregistry.sssom.tsv",
@@ -464,7 +636,482 @@
         "name": "Biopragmatics Mapping Registry"
       }
     ],
-    "fair_score": 0.3182
+    "status": "ok",
+    "metadata_completeness_score": 0.3182
+  },
+  {
+    "id": "https://zenodo.org/records/15504009/files/mappings.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15504009/files/mappings.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826794/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826794/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826794/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826794/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826794/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826794/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
+    "description": "Curated cellular microscopy phenotype mappings from SysMicro",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/fg/sym"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/atlas.sssom.tsv",
+    "description": "Curated text-to-ontology mappings from Expression Atlas",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/gxa"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/atlas.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebisc.sssom.tsv",
+    "description": "Curated text-to-ontology mappings from EBiSC",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://cells.ebisc.org/"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebisc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cttv.sssom.tsv",
+    "description": "Curated disease indication mappings from Open Targets",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.targetvalidation.org"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cttv.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/uniprot.sssom.tsv",
+    "description": "Curated disease mappings from UniProt",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/uniprot"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/uniprot.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/eva-clinvar.sssom.tsv",
+    "description": "EVA ClinVar disease mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/eva"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/eva-clinvar.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cbi.sssom.tsv",
+    "description": "Curated plant biosample mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/biosamples"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cbi.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/clinvar-xrefs.sssom.tsv",
+    "description": "ClinVar cross-reference mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ncbi.nlm.nih.gov/clinvar"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/clinvar-xrefs.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/metabolights.sssom.tsv",
+    "description": "Curated metabolomics mappings from MetaboLights",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/metabolights"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/metabolights.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ukbiobank.sssom.tsv",
+    "description": "UK Biobank phenotype mappings to EFO",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://github.com/EBISPOT/EFO-UKB-mappings"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ukbiobank.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebi-biosamples.sssom.tsv",
+    "description": "Curated BioSamples text-to-ontology mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/biosamples/"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebi-biosamples.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/faang.sssom.tsv",
+    "description": "FAANG project curated mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/vg/faang"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/faang.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/hca.sssom.tsv",
+    "description": "Human Cell Atlas curated mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/about/collaborations/human-cell-atlas"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/hca.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/gwas.sssom.tsv",
+    "description": "GWAS Catalog trait-to-EFO mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "http://www.ebi.ac.uk/gwas"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/gwas.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
@@ -484,7 +1131,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3052
+    "metadata_completeness_score": 0.3052
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings",
@@ -504,7 +1151,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3052
+    "metadata_completeness_score": 0.3052
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings",
@@ -519,7 +1166,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3864
+    "metadata_completeness_score": 0.3864
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings/slot-mappings",
@@ -534,6 +1181,6 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3864
+    "metadata_completeness_score": 0.3864
   }
 ]
