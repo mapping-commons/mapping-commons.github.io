@@ -437,6 +437,36 @@
     "fair_score": 0.3539
   },
   {
+    "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
+    "name": "Biomappings",
+    "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
+    "version": "0.5.1-dev-ec7849df",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "fair_score": 0.4773
+  },
+  {
+    "id": "https://github.com/biopragmatics/bioregistry/raw/main/exports/sssom/bioregistry.sssom.tsv",
+    "name": "Bioregistry",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://github.com/biopragmatics/bioregistry/raw/refs/heads/main/exports/sssom/bioregistry.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "fair_score": 0.3182
+  },
+  {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
     "name": "SSSOM to FAIR Mappings Schema Transformation",
     "description": "Transforms an SSSOM Mapping Set to a FAIR Mappings Schema MappingSpecification.\nThis preserves metadata elements while discarding the individual mappings,\nwhich have no equivalent in the FAIR Mappings Schema (which focuses on\nmapping specification metadata, not individual mapping assertions).\n\nKey transformations:\n- mapping_set_id \u2192 id\n- mapping_set_title \u2192 name\n- mapping_set_description \u2192 description\n- subject_source \u2192 subject_source (Source with id)\n- object_source \u2192 object_source (Source with id)\n- Sets type to 'sssom' to indicate the mapping specification type\n\nNote: Creator/author/reviewer transformations are simplified since SSSOM\nuses flat ID lists while FAIR Mappings uses structured Agent objects.",
