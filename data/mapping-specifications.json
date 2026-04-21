@@ -233,7 +233,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -269,7 +269,7 @@
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.5.0-dev-528eae3f",
+    "version": "0.5.1-dev-ec7849df",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mesh_chebi_biomappings.sssom.tsv",
@@ -400,7 +400,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -543,7 +543,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -558,6 +558,288 @@
       }
     ],
     "fair_score": 0.4042
+  },
+  {
+    "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
+    "name": "Biomappings",
+    "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
+    "version": "0.5.1-dev-ec7849df",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "fair_score": 0.4773
+  },
+  {
+    "id": "https://github.com/biopragmatics/bioregistry/raw/main/exports/sssom/bioregistry.sssom.tsv",
+    "name": "Bioregistry",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://github.com/biopragmatics/bioregistry/raw/refs/heads/main/exports/sssom/bioregistry.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "fair_score": 0.3182
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
+    "description": "Curated cellular microscopy phenotype mappings from SysMicro",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/fg/sym"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/atlas.sssom.tsv",
+    "description": "Curated text-to-ontology mappings from Expression Atlas",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/gxa"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/atlas.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebisc.sssom.tsv",
+    "description": "Curated text-to-ontology mappings from EBiSC",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://cells.ebisc.org/"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebisc.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cttv.sssom.tsv",
+    "description": "Curated disease indication mappings from Open Targets",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.targetvalidation.org"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cttv.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/uniprot.sssom.tsv",
+    "description": "Curated disease mappings from UniProt",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/uniprot"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/uniprot.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/eva-clinvar.sssom.tsv",
+    "description": "EVA ClinVar disease mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/eva"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/eva-clinvar.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cbi.sssom.tsv",
+    "description": "Curated plant biosample mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/biosamples"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cbi.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/clinvar-xrefs.sssom.tsv",
+    "description": "ClinVar cross-reference mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ncbi.nlm.nih.gov/clinvar"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/clinvar-xrefs.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/metabolights.sssom.tsv",
+    "description": "Curated metabolomics mappings from MetaboLights",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/metabolights"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/metabolights.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ukbiobank.sssom.tsv",
+    "description": "UK Biobank phenotype mappings to EFO",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://github.com/EBISPOT/EFO-UKB-mappings"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ukbiobank.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebi-biosamples.sssom.tsv",
+    "description": "Curated BioSamples text-to-ontology mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/biosamples/"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebi-biosamples.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/faang.sssom.tsv",
+    "description": "FAANG project curated mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/vg/faang"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/faang.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/hca.sssom.tsv",
+    "description": "Human Cell Atlas curated mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/about/collaborations/human-cell-atlas"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/hca.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/gwas.sssom.tsv",
+    "description": "GWAS Catalog trait-to-EFO mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "http://www.ebi.ac.uk/gwas"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/gwas.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "fair_score": 0.3815
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
