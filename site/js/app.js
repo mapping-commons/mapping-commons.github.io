@@ -116,6 +116,19 @@
     return str.length > len ? str.slice(0, len) + "..." : str;
   }
 
+  // Extract a human-friendly short name from a URL (e.g. GitHub/GitLab repo name)
+  function smartLabel(str) {
+    if (!str) return "";
+    try {
+      var url = new URL(str);
+      // GitHub / GitLab: use "owner/repo"
+      var parts = url.pathname.replace(/^\/+|\/+$/g, "").split("/");
+      if (parts.length >= 2) return parts.slice(0, 2).join("/");
+      if (parts.length === 1 && parts[0]) return parts[0];
+    } catch (e) { /* not a URL, fall through */ }
+    return str;
+  }
+
   function escapeHtml(str) {
     const div = document.createElement("div");
     div.textContent = str;
@@ -191,7 +204,7 @@
         return spec.creator && spec.creator.name ? [spec.creator.name] : [];
       case "registry":
         return (spec.registries || [])
-          .map(function (r) { return r.name || r.id || null; })
+          .map(function (r) { return r.name || smartLabel(r.id) || r.id || null; })
           .filter(Boolean);
       default:
         return [];
@@ -380,6 +393,19 @@
       escapeHtml(display) + '</a>';
   }
 
+  var STATUS_INFO = {
+    ok: { icon: "&#x2705;", label: "OK", description: "Metadata was successfully extracted from this mapping set." },
+    no_metadata: { icon: "&#x26A0;&#xFE0F;", label: "No metadata", description: "No machine-readable metadata header could be found in this mapping set." },
+    nonstandard_format: { icon: "&#x26A0;&#xFE0F;", label: "Nonstandard format", description: "This mapping set is in a format that could not be parsed (e.g. compressed)." },
+    fetch_error: { icon: "&#x26A0;&#xFE0F;", label: "Fetch error", description: "This mapping set could not be retrieved from its source URL." },
+  };
+
+  function renderStatus(status) {
+    var info = STATUS_INFO[status || "ok"] || STATUS_INFO["ok"];
+    return '<span class="status-badge" title="' + escapeHtml(info.label + ": " + info.description) + '">' +
+      info.icon + '</span>';
+  }
+
   function renderFairScore(score) {
     if (score == null) return "";
     var pct = Math.round(score * 100);
@@ -442,7 +468,6 @@
 
     addDetail("ID", spec.id ? renderUrl(spec.id) : null);
     addDetail("Version", spec.version ? escapeHtml(spec.version) : null);
-    addDetail("Type", spec.type ? escapeHtml(spec.type) : null);
     addDetail("License", spec.license ? renderLicenseBadge(spec) : null);
     addDetail("Publication date", spec.publication_date ? escapeHtml(spec.publication_date) : null);
     addDetail("Mapping method", spec.mapping_method ? escapeHtml(spec.mapping_method) : null);
@@ -456,7 +481,7 @@
     addDetail("Description", spec.description ? escapeHtml(spec.description) : null);
     if (spec.registries && spec.registries.length) {
       var regHtml = spec.registries.map(function(r) {
-        var label = escapeHtml(r.name || r.id || "Unknown");
+        var label = escapeHtml(r.name || smartLabel(r.id) || r.id || "Unknown");
         return r.url ? '<a href="' + escapeHtml(r.url) + '" target="_blank" rel="noopener" class="detail-link">' + label + '</a>' : label;
       }).join(", ");
       addDetail("Registries", regHtml);
@@ -471,6 +496,7 @@
       '<div class="result-card">' +
       '<div class="result-card-header">' +
       '<span class="result-card-title">' + title + '</span>' +
+      renderStatus(spec.status) +
       typeBadge +
       renderFairScore(spec.metadata_completeness_score) +
       '</div>' +

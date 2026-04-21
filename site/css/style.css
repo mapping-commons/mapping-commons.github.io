@@ -56,6 +56,17 @@ body {
   flex: 1;
 }
 
+.subheader {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  flex-basis: 100%;
+}
+
+.subheader a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .github-link {
   color: #fff;
   text-decoration: none;
@@ -241,6 +252,12 @@ body {
 .badge-license {
   background: #d1fae5;
   color: #065f46;
+}
+
+.status-badge {
+  cursor: help;
+  font-size: 0.9rem;
+  margin-left: 0.3rem;
 }
 
 .completeness-score {
