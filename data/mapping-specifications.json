@@ -343,10 +343,10 @@
     "metadata_completeness_score": 0.2727
   },
   {
-    "id": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
+    "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
+    "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -354,7 +354,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
