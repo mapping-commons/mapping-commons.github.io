@@ -1,15 +1,20 @@
 iri: https://w3id.org/mapping-commons/server
 title: Mapping Commons Registry Server (Under Construction)
+# Each registry entry represents a remote mapping registry that is aggregated
+# into the Mapping Commons Registry.
+#   id: A short, locally-unique code used to identify this registry in logs,
+#       error messages, and internal references. Not part of any external ID space.
+#   url: The URL of the remote registry YAML file.
 registries:
   - id: mh_mapping_initiative
-    uri: https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/registry.yml
+    url: https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/registry.yml
   - id: disease
-    uri: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings.yml
+    url: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings.yml
   - id: monarch
-    uri: https://raw.githubusercontent.com/monarch-initiative/monarch-mapping-commons/main/registry.yml
+    url: https://raw.githubusercontent.com/monarch-initiative/monarch-mapping-commons/main/registry.yml
   - id: c-path
-    uri: https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/registry.yml
+    url: https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/registry.yml
   - id: mesh-mappings
-    uri: https://raw.githubusercontent.com/mapping-commons/mesh-mappings/main/mappings.yml
+    url: https://raw.githubusercontent.com/mapping-commons/mesh-mappings/main/mappings.yml
   - id: biopragmatics
-    uri: https://github.com/biopragmatics/mapping-registry/raw/refs/heads/main/registry.yml
+    url: https://github.com/biopragmatics/mapping-registry/raw/refs/heads/main/registry.yml

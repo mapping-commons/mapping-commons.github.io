@@ -122,7 +122,7 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
 
     for registry in main_registry.get("registries", []):
         registry_id = registry.get("id")
-        registry_uri = registry.get("uri")
+        registry_uri = registry.get("url")
 
         response = requests.get(registry_uri)
         if response.status_code != 200:

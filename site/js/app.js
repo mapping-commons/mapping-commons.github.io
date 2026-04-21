@@ -17,10 +17,54 @@
     subjectSource: new Set(),
     objectSource: new Set(),
     creator: new Set(),
+    registry: new Set(),
   };
 
   let searchQuery = "";
   let debounceTimer = null;
+
+  // --- URL State ---
+
+  // Facet key -> URL param name mapping
+  const FACET_PARAMS = {
+    type: "type",
+    sourceType: "sourceType",
+    license: "license",
+    subjectSource: "subjectSource",
+    objectSource: "objectSource",
+    creator: "creator",
+    registry: "registry",
+  };
+
+  function readStateFromUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get("query");
+    if (q) searchQuery = q;
+
+    Object.keys(FACET_PARAMS).forEach(function (key) {
+      var val = params.get(FACET_PARAMS[key]);
+      if (val) {
+        val.split(",").forEach(function (v) {
+          activeFilters[key].add(decodeURIComponent(v));
+        });
+      }
+    });
+  }
+
+  function pushStateToUrl() {
+    var params = new URLSearchParams();
+    if (searchQuery.trim()) params.set("query", searchQuery.trim());
+
+    Object.keys(FACET_PARAMS).forEach(function (key) {
+      if (activeFilters[key].size > 0) {
+        params.set(FACET_PARAMS[key], Array.from(activeFilters[key]).join(","));
+      }
+    });
+
+    var qs = params.toString();
+    var newUrl = window.location.pathname + (qs ? "?" + qs : "");
+    window.history.replaceState(null, "", newUrl);
+  }
 
   // --- Helpers ---
 
@@ -145,6 +189,10 @@
           : [];
       case "creator":
         return spec.creator && spec.creator.name ? [spec.creator.name] : [];
+      case "registry":
+        return (spec.registries || [])
+          .map(function (r) { return r.name || r.id || null; })
+          .filter(Boolean);
       default:
         return [];
     }
@@ -168,6 +216,7 @@
       { key: "subjectSource", elementId: "facet-subject-source" },
       { key: "objectSource", elementId: "facet-object-source" },
       { key: "creator", elementId: "facet-creator" },
+      { key: "registry", elementId: "facet-registry" },
     ];
 
     // Count against specs that match search + all OTHER facets (cross-facet counts)
@@ -265,6 +314,7 @@
     renderResults();
     renderPagination();
     renderSummary();
+    pushStateToUrl();
   }
 
   // --- Rendering ---
@@ -628,7 +678,11 @@
   // --- Init ---
 
   function init() {
+    readStateFromUrl();
     setupSearch();
+    // Pre-fill search input from URL state
+    var input = document.getElementById("search-input");
+    if (searchQuery) input.value = searchQuery;
     loadData().catch((err) => {
       console.error(err);
       document.getElementById("results-list").innerHTML =
