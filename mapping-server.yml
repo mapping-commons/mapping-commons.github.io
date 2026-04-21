@@ -18,3 +18,5 @@ registries:
     url: https://raw.githubusercontent.com/mapping-commons/mesh-mappings/main/mappings.yml
   - id: biopragmatics
     url: https://github.com/biopragmatics/mapping-registry/raw/refs/heads/main/registry.yml
+  - id: ebi-text-mappings
+    url: https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/refs/heads/main/mappings.yml
