@@ -12,7 +12,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_hwt_impc.sssom.tsv",
@@ -27,7 +28,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_owt_impc.sssom.tsv",
@@ -42,7 +44,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ma_uberon_pat_impc.sssom.tsv",
@@ -57,7 +60,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pat_impc.sssom.tsv",
@@ -72,7 +76,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/pato_hp_pat_impc.sssom.tsv",
@@ -87,7 +92,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_xry_impc.sssom.tsv",
@@ -102,7 +108,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/hp_doid_pistoia.sssom.tsv",
@@ -123,7 +130,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_doid_pistoia.sssom.tsv",
@@ -144,7 +152,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_pistoia.sssom.tsv",
@@ -165,7 +174,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_doid_pistoia.sssom.tsv",
@@ -186,7 +196,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/ordo_mp_pistoia.sssom.tsv",
@@ -207,7 +218,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4221
+    "status": "ok",
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/commons/mouse-human/mappings/mp_hp_mgi_all.sssom.tsv",
@@ -229,7 +241,8 @@
         "url": "https://github.com/mapping-commons/mh_mapping_initiative"
       }
     ],
-    "fair_score": 0.4675
+    "status": "ok",
+    "metadata_completeness_score": 0.4675
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
@@ -249,7 +262,8 @@
         "url": "https://github.com/mapping-commons/disease-mappings"
       }
     ],
-    "fair_score": 0.4448
+    "status": "ok",
+    "metadata_completeness_score": 0.4448
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo.sssom.tsv",
@@ -263,7 +277,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -280,7 +295,22 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.4773
+    "status": "ok",
+    "metadata_completeness_score": 0.4773
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/gene_mappings.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/gene_mappings.sssom.tsv",
+    "type": "sssom",
+    "status": "no_metadata",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/hpo-snomed.sssom.tsv",
@@ -294,7 +324,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/11cc9c2c-f621-45bd-b9d0-da99af63e090",
@@ -308,13 +339,14 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
-    "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
-    "license": "https://w3id.org/sssom/license/unspecified",
-    "type": "sssom",
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -322,7 +354,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
@@ -336,7 +368,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno-cross-species.sssom.tsv",
@@ -351,7 +384,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://w3id.org/sssom/mappings/953bc698-d97d-4ef9-ba2e-1e3ce6b738ad",
@@ -365,7 +399,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "http://purl.obolibrary.org/obo/uberon/uberon-base/mappings.sssom.tsv",
@@ -382,7 +417,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3133
+    "status": "ok",
+    "metadata_completeness_score": 0.3133
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno/nbo-go.sssom.tsv",
@@ -396,7 +432,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.2727
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -414,7 +451,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.4042
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hp_lexical.sssom.tsv",
@@ -434,7 +472,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "fair_score": 0.3539
+    "status": "ok",
+    "metadata_completeness_score": 0.3539
   },
   {
     "id": "cpath_obo_omop",
@@ -449,7 +488,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "cpath_obo_omop_invert",
@@ -464,7 +504,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "fars_obo_omop",
@@ -479,7 +520,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "fars_obo_omop_invert",
@@ -494,7 +536,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3409
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "https://doi.org/10.5281/zenodo.7250177",
@@ -509,7 +552,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3636
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949696",
@@ -524,7 +568,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3636
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949858",
@@ -539,7 +584,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.3636
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
@@ -557,7 +603,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "fair_score": 0.4042
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -573,7 +620,8 @@
         "name": "Biopragmatics Mapping Registry"
       }
     ],
-    "fair_score": 0.4773
+    "status": "ok",
+    "metadata_completeness_score": 0.4773
   },
   {
     "id": "https://github.com/biopragmatics/bioregistry/raw/main/exports/sssom/bioregistry.sssom.tsv",
@@ -587,7 +635,216 @@
         "name": "Biopragmatics Mapping Registry"
       }
     ],
-    "fair_score": 0.3182
+    "status": "ok",
+    "metadata_completeness_score": 0.3182
+  },
+  {
+    "id": "https://zenodo.org/records/15504009/files/mappings.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15504009/files/mappings.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826794/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826794/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826794/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826794/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826794/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826794/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
+    "content_url": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
+    "type": "sssom",
+    "status": "nonstandard_format",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry"
+      }
+    ],
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
@@ -605,7 +862,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/atlas.sssom.tsv",
@@ -623,7 +881,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebisc.sssom.tsv",
@@ -641,7 +900,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cttv.sssom.tsv",
@@ -659,7 +919,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/uniprot.sssom.tsv",
@@ -677,7 +938,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/eva-clinvar.sssom.tsv",
@@ -695,7 +957,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cbi.sssom.tsv",
@@ -713,7 +976,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/clinvar-xrefs.sssom.tsv",
@@ -731,7 +995,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/metabolights.sssom.tsv",
@@ -749,7 +1014,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ukbiobank.sssom.tsv",
@@ -767,7 +1033,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebi-biosamples.sssom.tsv",
@@ -785,7 +1052,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/faang.sssom.tsv",
@@ -803,7 +1071,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/hca.sssom.tsv",
@@ -821,7 +1090,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/gwas.sssom.tsv",
@@ -839,7 +1109,8 @@
         "url": "https://github.com/mapping-commons/ebi-text-mappings"
       }
     ],
-    "fair_score": 0.3815
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
@@ -859,7 +1130,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3052
+    "metadata_completeness_score": 0.3052
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings",
@@ -879,7 +1150,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3052
+    "metadata_completeness_score": 0.3052
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings",
@@ -894,7 +1165,7 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3864
+    "metadata_completeness_score": 0.3864
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings/slot-mappings",
@@ -909,6 +1180,6 @@
         "url": "https://github.com/mapping-commons/mapping-commons.github.io"
       }
     ],
-    "fair_score": 0.3864
+    "metadata_completeness_score": 0.3864
   }
 ]

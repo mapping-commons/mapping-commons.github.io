@@ -13,6 +13,14 @@ from fair_mappings_schema.schema import get_schema_view
 
 logger = logging.getLogger(__name__)
 
+# Shared session with a browser-like User-Agent so that hosts such as
+# GitLab don't reject requests from GitHub Actions runners.
+_session = requests.Session()
+_session.headers["User-Agent"] = (
+    "mapping-commons-registry/1.0 "
+    "(+https://github.com/mapping-commons/mapping-commons.github.io)"
+)
+
 
 def _registry_info(registry_data: dict) -> dict:
     """Extract registry metadata from a registry YAML dict."""
@@ -25,12 +33,36 @@ def _registry_info(registry_data: dict) -> dict:
     }
 
 
+def _classify_error(mapping_set_uri: str, error: Exception) -> str:
+    """Classify a mapping set processing error into a status string."""
+    error_msg = str(error).lower()
+    if "bytes-like object" in error_msg or mapping_set_uri.endswith(".gz"):
+        return "nonstandard_format"
+    if "no #-commented header" in error_msg:
+        return "no_metadata"
+    if "http" in error_msg and any(c.isdigit() for c in error_msg):
+        return "fetch_error"
+    if "connection" in error_msg or "remote end closed" in error_msg:
+        return "fetch_error"
+    return "no_metadata"
+
+
+def _stub_spec(mapping_set_id: str, status: str) -> dict:
+    """Create a minimal spec entry for a mapping set that could not be parsed."""
+    return {
+        "id": mapping_set_id,
+        "content_url": mapping_set_id,
+        "type": "sssom",
+        "status": status,
+    }
+
+
 def _process_sssom_mapping_set(mapping_set_id: str, mapping_set_uri: str) -> dict | None:
     """Fetch, parse, and transform a single SSSOM mapping set.
 
     Raises on any error so the caller can log context and skip.
     """
-    response = requests.get(mapping_set_uri, stream=True)
+    response = _session.get(mapping_set_uri, stream=True)
     if response.status_code != 200:
         raise RuntimeError(f"HTTP {response.status_code} fetching {mapping_set_uri}")
 
@@ -102,8 +134,8 @@ def cli():
               help="Path to write error log")
 def prepare_mapping_registry(registry_file, output_file, log_file):
     """
-    Fetch SSSOM mapping sets from registries, transform each to a FAIR
-    Mappings Schema MappingSpecification, compute FAIR scores, and write JSON.
+    Fetch SSSOM mapping sets from registries, transform each to a
+    MappingSpecification, compute metadata completeness scores, and write JSON.
 
     Non-conformant files are logged and skipped.
     """
@@ -118,13 +150,12 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
         main_registry = yaml.safe_load(f)
 
     specifications = []
-    skipped = 0
 
     for registry in main_registry.get("registries", []):
         registry_id = registry.get("id")
         registry_uri = registry.get("url")
 
-        response = requests.get(registry_uri)
+        response = _session.get(registry_uri)
         if response.status_code != 200:
             msg = f"Error fetching registry file: {registry_uri} (HTTP {response.status_code})"
             logger.error(msg)
@@ -142,38 +173,47 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
                 spec = _process_sssom_mapping_set(mapping_set_id, mapping_set_uri)
                 if spec:
                     spec.setdefault("registries", []).append(info)
+                    spec.setdefault("status", "ok")
                     specifications.append(spec)
                 else:
-                    skipped += 1
+                    stub = _stub_spec(mapping_set_id, "no_metadata")
+                    stub["registries"] = [info]
+                    specifications.append(stub)
                     logger.warning(
-                        "SKIPPED mapping_set_id=%s | registry=%s (%s) | reason=empty result",
+                        "STUB mapping_set_id=%s | registry=%s (%s) | status=no_metadata | reason=empty result",
                         mapping_set_id, registry_id, registry_title,
                     )
             except Exception as e:
-                skipped += 1
-                logger.error(
-                    "SKIPPED mapping_set_id=%s | registry=%s (%s) | reason=%s\n%s",
-                    mapping_set_id, registry_id, registry_title,
-                    e, traceback.format_exc(),
+                status = _classify_error(mapping_set_uri, e)
+                stub = _stub_spec(mapping_set_id, status)
+                stub["registries"] = [info]
+                specifications.append(stub)
+                logger.warning(
+                    "STUB mapping_set_id=%s | registry=%s (%s) | status=%s | reason=%s",
+                    mapping_set_id, registry_id, registry_title, status, e,
                 )
-                click.echo(f"Skipping {mapping_set_id} (registry: {registry_id}): {e}", err=True)
+                click.echo(f"Stub for {mapping_set_id} (registry: {registry_id}, status: {status}): {e}", err=True)
 
     # Local transform registry
     transform_registry = os.path.join(os.path.dirname(registry_file), "registry.yml")
     if os.path.exists(transform_registry):
         specifications.extend(_process_transform_registry(transform_registry))
 
-    # FAIR scores
+    # Metadata completeness scores
     sv = get_schema_view()
     for spec in specifications:
-        spec["fair_score"] = score_instance(spec, sv=sv)["fair_score"]
+        if spec.get("status", "ok") == "ok":
+            spec["metadata_completeness_score"] = score_instance(spec, sv=sv)["fair_score"]
+        else:
+            spec["metadata_completeness_score"] = 0.0
 
     with open(output_file, "w") as f:
         json.dump(specifications, f, indent=2)
 
+    stubs = sum(1 for s in specifications if s.get("status") != "ok")
     summary = f"Generated {len(specifications)} MappingSpecification records to {output_file}"
-    if skipped:
-        summary += f" ({skipped} mapping sets skipped, see {log_file})"
+    if stubs:
+        summary += f" ({stubs} with incomplete metadata, see {log_file})"
     click.echo(summary)
     logger.info(summary)
 
@@ -183,7 +223,7 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
 @click.argument("mapping_type")
 @click.argument("output_file", type=click.Path(writable=True))
 def transform_single(input_file, mapping_type, output_file):
-    """Transform a single input file to FAIR Mappings Schema."""
+    """Transform a single input file to a MappingSpecification."""
     spec = load_mapping(input_file, mapping_type)
     with open(output_file, "w") as f:
         yaml.dump(spec, f, default_flow_style=False)

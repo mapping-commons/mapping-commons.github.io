@@ -15,7 +15,7 @@ resolution-markers = [
 ]
 
 [manifest]
-overrides = [{ name = "linkml-map", git = "https://github.com/linkml/linkml-map.git?rev=issue170" }]
+overrides = [{ name = "linkml-map", git = "https://github.com/linkml/linkml-map.git?rev=main" }]
 
 [[package]]
 name = "alabaster"
@@ -728,8 +728,8 @@ wheels = [
 
 [[package]]
 name = "linkml-map"
-version = "0.4.0.post9.dev0+7bab107"
-source = { git = "https://github.com/linkml/linkml-map.git?rev=issue170#7bab1072e086dfd8dbe45a91de24d27b6d86c738" }
+version = "0.5.2.post5.dev0+d265056"
+source = { git = "https://github.com/linkml/linkml-map.git?rev=main#d265056cdf543b487c158b5ee9bacd4ca385e697" }
 dependencies = [
     { name = "asteval" },
     { name = "click" },
@@ -740,6 +740,7 @@ dependencies = [
     { name = "graphviz" },
     { name = "jinja2" },
     { name = "lark" },
+    { name = "linkml" },
     { name = "linkml-runtime" },
     { name = "more-itertools" },
     { name = "pint", version = "0.24.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
@@ -793,7 +794,7 @@ dependencies = [
 requires-dist = [
     { name = "click" },
     { name = "fair-mappings", git = "https://github.com/mapping-commons/fair-mappings-schema.git?rev=add-cli" },
-    { name = "linkml-map", git = "https://github.com/linkml/linkml-map.git?rev=issue170" },
+    { name = "linkml-map", git = "https://github.com/linkml/linkml-map.git?rev=main" },
     { name = "pyyaml" },
     { name = "requests" },
     { name = "sssom" },

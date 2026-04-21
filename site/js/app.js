@@ -384,15 +384,15 @@
     if (score == null) return "";
     var pct = Math.round(score * 100);
     var color = pct >= 70 ? "#059669" : pct >= 40 ? "#d97706" : "#dc2626";
-    return '<span class="fair-score" title="FAIR completeness score: ' + pct + '%"' +
+    return '<span class="completeness-score" title="Metadata completeness: ' + pct + '% — indicates how rich the metadata provided by the source is"' +
       ' style="--score-color: ' + color + '">' +
-      '<svg class="fair-ring" viewBox="0 0 36 36">' +
+      '<svg class="completeness-ring" viewBox="0 0 36 36">' +
       '<circle cx="18" cy="18" r="15.9" fill="none" stroke="#e5e7eb" stroke-width="3"/>' +
       '<circle cx="18" cy="18" r="15.9" fill="none" stroke="' + color + '" stroke-width="3"' +
       ' stroke-dasharray="' + pct + ' ' + (100 - pct) + '"' +
       ' stroke-dashoffset="25" stroke-linecap="round"/>' +
       '</svg>' +
-      '<span class="fair-pct">' + pct + '%</span>' +
+      '<span class="completeness-pct">' + pct + '%</span>' +
       '</span>';
   }
 
@@ -472,7 +472,7 @@
       '<div class="result-card-header">' +
       '<span class="result-card-title">' + title + '</span>' +
       typeBadge +
-      renderFairScore(spec.fair_score) +
+      renderFairScore(spec.metadata_completeness_score) +
       '</div>' +
       sourcesHtml +
       detailsHtml +
