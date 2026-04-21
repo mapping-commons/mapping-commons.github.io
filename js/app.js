@@ -400,17 +400,26 @@
     fetch_error: { icon: "&#x26A0;&#xFE0F;", label: "Fetch error", description: "This mapping set could not be retrieved from its source URL." },
   };
 
+  function renderHelpTip(text) {
+    return '<span class="help-tip" tabindex="0" role="button" aria-label="More info">' +
+      '<span class="help-tip-icon">?</span>' +
+      '<span class="help-tip-bubble">' + escapeHtml(text) + '</span>' +
+      '</span>';
+  }
+
   function renderStatus(status) {
     var info = STATUS_INFO[status || "ok"] || STATUS_INFO["ok"];
-    return '<span class="status-badge" title="' + escapeHtml(info.label + ": " + info.description) + '">' +
-      info.icon + '</span>';
+    return '<span class="status-badge">' +
+      info.icon +
+      renderHelpTip(info.label + ": " + info.description) +
+      '</span>';
   }
 
   function renderFairScore(score) {
     if (score == null) return "";
     var pct = Math.round(score * 100);
     var color = pct >= 70 ? "#059669" : pct >= 40 ? "#d97706" : "#dc2626";
-    return '<span class="completeness-score" title="Metadata completeness: ' + pct + '% — indicates how rich the metadata provided by the source is"' +
+    return '<span class="completeness-score"' +
       ' style="--score-color: ' + color + '">' +
       '<svg class="completeness-ring" viewBox="0 0 36 36">' +
       '<circle cx="18" cy="18" r="15.9" fill="none" stroke="#e5e7eb" stroke-width="3"/>' +
@@ -419,6 +428,7 @@
       ' stroke-dashoffset="25" stroke-linecap="round"/>' +
       '</svg>' +
       '<span class="completeness-pct">' + pct + '%</span>' +
+      renderHelpTip("Metadata completeness: " + pct + "%. Indicates how rich the metadata provided by the source is.") +
       '</span>';
   }
 
