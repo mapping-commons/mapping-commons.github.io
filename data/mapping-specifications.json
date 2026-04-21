@@ -233,7 +233,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -269,7 +269,7 @@
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.5.0-dev-528eae3f",
+    "version": "0.5.1-dev-ec7849df",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mesh_chebi_biomappings.sssom.tsv",
@@ -400,7 +400,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -435,129 +435,6 @@
       }
     ],
     "fair_score": 0.3539
-  },
-  {
-    "id": "cpath_obo_omop",
-    "description": "All C-Path generated mappings of OBO terms to OMOP terms",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.3409
-  },
-  {
-    "id": "cpath_obo_omop_invert",
-    "description": "Inversion of the C-Path generated OBO to OMOP mappings",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.3409
-  },
-  {
-    "id": "fars_obo_omop",
-    "description": "C-Path generated mappings of OBO to OMOP terms: FARS COA",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.3409
-  },
-  {
-    "id": "fars_obo_omop_invert",
-    "description": "Inversion of the C-Path generated OBO to OMOP mappings: FARS COA",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.3409
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.7250177",
-    "version": "V1.5",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.3636
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.6949696",
-    "version": "V1.1",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.3636
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.6949858",
-    "version": "V1.1",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.3636
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-03-03/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "subject_source": {
-      "id": "infores:mondo"
-    },
-    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "fair_score": 0.4042
   },
   {
     "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
