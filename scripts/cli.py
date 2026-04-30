@@ -2,6 +2,8 @@ import click
 import yaml
 import requests
 import json
+import gzip
+import io
 import os
 import logging
 import traceback
@@ -33,10 +35,18 @@ def _registry_info(registry_data: dict) -> dict:
     }
 
 
-def _classify_error(mapping_set_uri: str, error: Exception) -> str:
+def _iter_gz_lines(response: requests.Response):
+    """Yield decompressed text lines from a gzipped HTTP response, streaming."""
+    decompressor = gzip.GzipFile(fileobj=response.raw)
+    reader = io.TextIOWrapper(decompressor, encoding="utf-8")
+    for line in reader:
+        yield line.rstrip("\n")
+
+
+def _classify_error(error: Exception) -> str:
     """Classify a mapping set processing error into a status string."""
     error_msg = str(error).lower()
-    if "bytes-like object" in error_msg or mapping_set_uri.endswith(".gz"):
+    if "bytes-like object" in error_msg:
         return "nonstandard_format"
     if "no #-commented header" in error_msg:
         return "no_metadata"
@@ -67,7 +77,11 @@ def _process_sssom_mapping_set(mapping_set_id: str, mapping_set_uri: str) -> dic
         raise RuntimeError(f"HTTP {response.status_code} fetching {mapping_set_uri}")
 
     try:
-        meta = parse_sssom_tsv(response.iter_lines(decode_unicode=True))
+        if mapping_set_uri.endswith(".gz"):
+            lines = _iter_gz_lines(response)
+        else:
+            lines = response.iter_lines(decode_unicode=True)
+        meta = parse_sssom_tsv(lines)
     finally:
         response.close()
 
@@ -184,7 +198,7 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
                         mapping_set_id, registry_id, registry_title,
                     )
             except Exception as e:
-                status = _classify_error(mapping_set_uri, e)
+                status = _classify_error(e)
                 stub = _stub_spec(mapping_set_id, status)
                 stub["registries"] = [info]
                 specifications.append(stub)
