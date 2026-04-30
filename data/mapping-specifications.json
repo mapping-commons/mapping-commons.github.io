@@ -343,10 +343,10 @@
     "metadata_completeness_score": 0.2727
   },
   {
-    "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
-    "license": "https://w3id.org/sssom/license/unspecified",
-    "type": "sssom",
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -354,8 +354,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "status": "ok",
-    "metadata_completeness_score": 0.2727
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
@@ -557,11 +556,10 @@
     "metadata_completeness_score": 0.3636
   },
   {
-    "id": "https://doi.org/10.5281/zenodo.6949696",
-    "version": "V1.1",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
+    "id": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
     "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
     "registries": [
       {
         "id": "https://w3id.org/cpont/mappings",
@@ -569,8 +567,7 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3636
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949858",
@@ -618,7 +615,8 @@
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "status": "ok",
@@ -633,7 +631,8 @@
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "status": "ok",
@@ -643,11 +642,12 @@
     "id": "https://zenodo.org/records/15504009/files/mappings.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15504009/files/mappings.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -656,11 +656,12 @@
     "id": "https://zenodo.org/records/15826794/files/priority.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826794/files/priority.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -669,11 +670,12 @@
     "id": "https://zenodo.org/records/15826794/files/processed.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826794/files/processed.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -682,11 +684,12 @@
     "id": "https://zenodo.org/records/15826794/files/raw.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826794/files/raw.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -695,11 +698,12 @@
     "id": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -708,11 +712,12 @@
     "id": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -721,11 +726,12 @@
     "id": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -734,11 +740,12 @@
     "id": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -747,11 +754,12 @@
     "id": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -760,11 +768,12 @@
     "id": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -773,11 +782,12 @@
     "id": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -786,11 +796,12 @@
     "id": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -799,11 +810,12 @@
     "id": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -812,11 +824,12 @@
     "id": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -825,11 +838,12 @@
     "id": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
@@ -838,11 +852,12 @@
     "id": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
     "content_url": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
     "type": "sssom",
-    "status": "nonstandard_format",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
-        "name": "Biopragmatics Mapping Registry"
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
       }
     ],
     "metadata_completeness_score": 0.0
