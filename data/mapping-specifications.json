@@ -343,10 +343,10 @@
     "metadata_completeness_score": 0.2727
   },
   {
-    "id": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
+    "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
+    "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -354,7 +354,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
@@ -556,10 +557,11 @@
     "metadata_completeness_score": 0.3636
   },
   {
-    "id": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
+    "id": "https://doi.org/10.5281/zenodo.6949696",
+    "version": "V1.1",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/cpont/mappings",
@@ -567,7 +569,8 @@
         "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
   },
   {
     "id": "https://doi.org/10.5281/zenodo.6949858",
