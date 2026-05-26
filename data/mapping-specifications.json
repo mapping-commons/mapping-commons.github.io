@@ -246,7 +246,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-05-05/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -377,6 +377,12 @@
     "description": "The official uPheno cross-species mappings.",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "object_source": {
+      "id": "mapping-commons:per_mapping"
+    },
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/upheno-cross-species.sssom.tsv",
     "registries": [
       {
@@ -386,7 +392,7 @@
       }
     ],
     "status": "ok",
-    "metadata_completeness_score": 0.3409
+    "metadata_completeness_score": 0.4221
   },
   {
     "id": "https://w3id.org/sssom/mappings/953bc698-d97d-4ef9-ba2e-1e3ce6b738ad",
@@ -438,7 +444,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-05-05/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -590,7 +596,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-04-07/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-05-05/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -864,25 +870,6 @@
       }
     ],
     "metadata_completeness_score": 0.0
-  },
-  {
-    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
-    "description": "Curated cellular microscopy phenotype mappings from SysMicro",
-    "license": "https://w3id.org/sssom/license/unspecified",
-    "type": "sssom",
-    "subject_source": {
-      "id": "https://www.ebi.ac.uk/fg/sym"
-    },
-    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
-        "name": "EBI Text Mappings",
-        "url": "https://github.com/mapping-commons/ebi-text-mappings"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/atlas.sssom.tsv",
