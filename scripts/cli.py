@@ -67,6 +67,43 @@ def _stub_spec(mapping_set_id: str, status: str) -> dict:
     }
 
 
+# Placeholder used when subject_source / object_source are recorded per-mapping
+# (in TSV columns) instead of at the mapping-set metadata level, e.g. mondo.sssom.tsv.
+PER_MAPPING_SOURCE = "mapping-commons:per_mapping"
+
+
+def _capture_sssom_head(lines) -> tuple[list[str], list[str]]:
+    """Buffer SSSOM lines through the column header + first data row.
+
+    Returns the captured lines (suitable for re-feeding to ``parse_sssom_tsv``)
+    and the TSV column header fields (empty if no data section was found).
+    """
+    captured: list[str] = []
+    column_header: str | None = None
+    for line in lines:
+        captured.append(line)
+        if line.startswith("#") or not line.strip():
+            continue
+        if column_header is None:
+            column_header = line
+        else:
+            break
+    return captured, column_header.split("\t") if column_header else []
+
+
+def _inject_per_mapping_source(meta: dict, columns: list[str]) -> None:
+    """Mark subject_/object_source as present when only the TSV column exists.
+
+    The prefix-implied case (no set-level value, no column, source derivable
+    from subject_id/object_id CURIE prefixes) is intentionally not handled —
+    see docs/per_mapping_source.md.
+    """
+    col_set = set(columns)
+    for field in ("subject_source", "object_source"):
+        if field in col_set and not meta.get(field):
+            meta[field] = PER_MAPPING_SOURCE
+
+
 def _process_sssom_mapping_set(mapping_set_id: str, mapping_set_uri: str) -> dict | None:
     """Fetch, parse, and transform a single SSSOM mapping set.
 
@@ -81,12 +118,15 @@ def _process_sssom_mapping_set(mapping_set_id: str, mapping_set_uri: str) -> dic
             lines = _iter_gz_lines(response)
         else:
             lines = response.iter_lines(decode_unicode=True)
-        meta = parse_sssom_tsv(lines)
+        captured, columns = _capture_sssom_head(lines)
+        meta = parse_sssom_tsv(iter(captured))
     finally:
         response.close()
 
     if "mapping_set_id" not in meta:
         meta["mapping_set_id"] = mapping_set_id
+
+    _inject_per_mapping_source(meta, columns)
 
     spec = transform_to_fair(meta, "sssom")
 
@@ -126,7 +166,14 @@ def _process_transform_registry(registry_path: str) -> list[dict]:
         mapping_type = "sssom" if local_name.endswith(".sssom.tsv") else "linkml_map"
 
         try:
-            spec = load_mapping(input_file, mapping_type)
+            if mapping_type == "sssom":
+                with open(input_file) as f:
+                    captured, columns = _capture_sssom_head(f)
+                meta = parse_sssom_tsv(iter(captured))
+                _inject_per_mapping_source(meta, columns)
+                spec = transform_to_fair(meta, "sssom")
+            else:
+                spec = load_mapping(input_file, mapping_type)
             spec["registries"] = [info]
             specs.append(spec)
         except Exception as e:

@@ -37,7 +37,7 @@ To add a new mapping registry to the Mapping Commons:
    - `mapping_set_description` — shown in search results
    - `license` — e.g. `https://creativecommons.org/publicdomain/zero/1.0/`
    - `mapping_set_version`
-   - `subject_source` / `object_source` — what's being mapped
+   - `subject_source` / `object_source` — what's being mapped (see [docs/per_mapping_source.md](docs/per_mapping_source.md) if your sources vary per mapping)
    - `mapping_tool` — how the mappings were created
    - `publication_date`
 
