@@ -246,7 +246,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-05-05/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-09-01/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -284,7 +284,7 @@
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.5.1-dev-ec7849df",
+    "version": "0.6.1-dev-5d3d419d",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mesh_chebi_biomappings.sssom.tsv",
@@ -395,7 +395,7 @@
     "metadata_completeness_score": 0.4221
   },
   {
-    "id": "https://w3id.org/sssom/mappings/953bc698-d97d-4ef9-ba2e-1e3ce6b738ad",
+    "id": "https://w3id.org/sssom/mappings/3e59a3bd-7601-42fa-9317-99b33b830ea5",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/upheno-species-independent.sssom.tsv",
@@ -410,13 +410,10 @@
     "metadata_completeness_score": 0.2727
   },
   {
-    "id": "http://purl.obolibrary.org/obo/uberon/uberon-base/mappings.sssom.tsv",
-    "license": "http://creativecommons.org/licenses/by/3.0/",
-    "type": "sssom",
-    "subject_source": {
-      "id": "http://purl.obolibrary.org/obo/uberon/uberon-base.owl"
-    },
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/uberon.sssom.tsv",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/uberon.sssom.tsv",
+    "type": "sssom",
+    "status": "no_metadata",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -424,8 +421,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3133
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "https://data.monarchinitiative.org/mappings/upheno/nbo-go.sssom.tsv",
@@ -444,7 +440,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-05-05/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-09-01/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -481,6 +477,121 @@
     ],
     "status": "ok",
     "metadata_completeness_score": 0.3539
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_1.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_1.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_2.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_2.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2cl.sssom.tsv",
+    "description": "LOINC part to Cell Ontology mappings. Parts carrying a '^' qualifier denote a measurement context (timing, specimen order, posture, challenge protocol) applied to the same underlying entity; these are asserted as skos:broadMatch, since the LOINC part is narrower than the ontology concept. Unqualified parts use skos:exactMatch. The predicate revision on qualified parts was applied programmatically; the underlying subject-object mappings are the original manual curation.",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2cl.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2go.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2go.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncbitaxon.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncbitaxon.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncit.sssom.tsv",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncit.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2pr.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2pr.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2uberon.sssom.tsv",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2uberon.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/monarch",
+        "name": "Monarch Mapping Commons",
+        "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "cpath_obo_omop",
@@ -596,7 +707,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-05-05/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-09-01/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -617,7 +728,7 @@
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.5.1-dev-ec7849df",
+    "version": "0.6.1-dev-5d3d419d",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -704,10 +815,15 @@
     "metadata_completeness_score": 0.0
   },
   {
-    "id": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826779/files/priority.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/cell/priority.sssom.tsv.gz",
+    "name": "SeMRA Cell and Cell Line Mappings Database - Priority Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/22764952/files/priority.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -715,13 +831,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826779/files/processed.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/cell/processed.sssom.tsv.gz",
+    "name": "SeMRA Cell and Cell Line Mappings Database - Processed Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/22764952/files/processed.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -729,13 +851,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826779/files/raw.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/cell/raw.sssom.tsv.gz",
+    "name": "SeMRA Cell and Cell Line Mappings Database - Raw Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/22764952/files/raw.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -743,13 +871,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826768/files/priority.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/complex/priority.sssom.tsv.gz",
+    "name": "SeMRA Protein Complex Mappings Database - Priority Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/22764924/files/priority.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -757,13 +891,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826768/files/processed.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/complex/processed.sssom.tsv.gz",
+    "name": "SeMRA Protein Complex Mappings Database - Processed Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/22764924/files/processed.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -771,13 +911,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826768/files/raw.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/complex/raw.sssom.tsv.gz",
+    "name": "SeMRA Protein Complex Mappings Database - Raw Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/22764924/files/raw.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -785,13 +931,16 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826754/files/priority.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/anatomy/priority.sssom.tsv.gz",
+    "name": "SeMRA Anatomy Mappings Database - Priority Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-11",
     "type": "sssom",
-    "status": "no_metadata",
+    "content_url": "https://zenodo.org/records/20741899/files/priority.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -799,13 +948,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
   },
   {
-    "id": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826754/files/processed.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/anatomy/processed.sssom.tsv.gz",
+    "name": "SeMRA Anatomy Mappings Database - Processed Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-11",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/20741899/files/processed.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -813,13 +968,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826754/files/raw.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/anatomy/raw.sssom.tsv.gz",
+    "name": "SeMRA Anatomy Mappings Database - Raw Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-09-11",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/20741899/files/raw.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -827,13 +988,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826693/files/priority.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/disease/priority.sssom.tsv.gz",
+    "name": "SeMRA Disease Mappings Database - Priority Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-08-14",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/21935586/files/priority.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -841,13 +1008,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826693/files/processed.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/disease/processed.sssom.tsv.gz",
+    "name": "SeMRA Disease Mappings Database - Processed Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-08-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/21935586/files/processed.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -855,13 +1028,19 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
   },
   {
-    "id": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
-    "content_url": "https://zenodo.org/records/15826693/files/raw.sssom.tsv.gz",
+    "id": "https://w3id.org/biopragmatics/semra/disease/raw.sssom.tsv.gz",
+    "name": "SeMRA Disease Mappings Database - Raw Mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "publication_date": "2026-08-13",
     "type": "sssom",
-    "status": "no_metadata",
+    "subject_source": {
+      "id": "mapping-commons:per_mapping"
+    },
+    "content_url": "https://zenodo.org/records/21935586/files/raw.sssom.tsv.gz",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
@@ -869,7 +1048,27 @@
         "url": "https://github.com/biopragmatics"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
+    "description": "Curated cellular microscopy phenotype mappings from SysMicro",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/fg/sym"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/sysmicro.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/atlas.sssom.tsv",
@@ -911,13 +1110,51 @@
   },
   {
     "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cttv.sssom.tsv",
-    "description": "Curated disease indication mappings from Open Targets",
+    "description": "Curated disease string-to-ontology mappings from Open Targets",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
     "subject_source": {
-      "id": "https://www.targetvalidation.org"
+      "id": "https://platform.opentargets.org"
     },
     "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/cttv.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/opentargets-cancer.sssom.tsv",
+    "description": "Open Targets cancer type (intOGen / Cancer Biomarkers) to EFO mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://platform.opentargets.org"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/opentargets-cancer.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/bmb-wp7.sssom.tsv",
+    "description": "BioMedBridges WP7 curated disease and phenotype mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.biomedbridges.eu"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/bmb-wp7.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
@@ -1108,6 +1345,25 @@
       "id": "http://www.ebi.ac.uk/gwas"
     },
     "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/gwas.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/pgs.sssom.tsv",
+    "description": "PGS Catalog reported trait to EFO mappings",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.pgscatalog.org"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/pgs.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
