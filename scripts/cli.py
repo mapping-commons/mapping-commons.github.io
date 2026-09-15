@@ -220,7 +220,7 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
         if response.status_code != 200:
             msg = f"Error fetching registry file: {registry_uri} (HTTP {response.status_code})"
             logger.error(msg)
-            raise click.ClickException(msg)
+            continue
 
         registry_data = yaml.safe_load(response.text)
         info = _registry_info(registry_data)
