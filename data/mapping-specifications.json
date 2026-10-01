@@ -284,7 +284,7 @@
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.6.1-dev-5d3d419d",
+    "version": "0.6.1-dev-ed12b9f4",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mesh_chebi_biomappings.sssom.tsv",
@@ -343,10 +343,10 @@
     "metadata_completeness_score": 0.2727
   },
   {
-    "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
-    "license": "https://w3id.org/sssom/license/unspecified",
-    "type": "sssom",
+    "id": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -354,8 +354,7 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "status": "ok",
-    "metadata_completeness_score": 0.2727
+    "metadata_completeness_score": 0.0
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
@@ -480,9 +479,9 @@
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_1.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_1.sssom.tsv",
+    "license": "https://github.com/mapping-commons/mapping-commons.github.io/blob/main/docs/original_license_applies.md",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_1.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -490,13 +489,15 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_2.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_2.sssom.tsv",
+    "description": "LOINC part to ChEBI mappings. Parts carrying a '^' qualifier denote a measurement context (timing, specimen order, posture, challenge protocol) applied to the same underlying entity; these are asserted as skos:broadMatch, since the LOINC part is narrower than the ontology concept. Unqualified parts use skos:exactMatch. The predicate revision on qualified parts was applied programmatically; the underlying subject-object mappings are the original manual curation.",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loinc2chebi_2.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -504,7 +505,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2cl.sssom.tsv",
@@ -524,9 +526,9 @@
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2go.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2go.sssom.tsv",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2go.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -534,13 +536,15 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncbitaxon.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncbitaxon.sssom.tsv",
+    "description": "LOINC part to NCBI Taxon mappings. Parts carrying a '^' qualifier denote a measurement context (timing, specimen order, posture, challenge protocol) applied to the same underlying entity; these are asserted as skos:broadMatch, since the LOINC part is narrower than the ontology concept. Unqualified parts use skos:exactMatch. The predicate revision on qualified parts was applied programmatically; the underlying subject-object mappings are the original manual curation.",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncbitaxon.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -548,7 +552,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2ncit.sssom.tsv",
@@ -567,9 +572,10 @@
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2pr.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2pr.sssom.tsv",
+    "description": "LOINC part to Protein Ontology mappings. Parts carrying a '^' qualifier denote a measurement context (timing, specimen order, posture, challenge protocol) applied to the same underlying entity; these are asserted as skos:broadMatch, since the LOINC part is narrower than the ontology concept. Unqualified parts use skos:exactMatch. The predicate revision on qualified parts was applied programmatically; the underlying subject-object mappings are the original manual curation.",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2pr.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -577,13 +583,15 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2uberon.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2uberon.sssom.tsv",
+    "description": "This mapping set contains mappings between LOINC parts and Uberon anatomical entities. The predicate revision on qualified parts was applied programmatically; the underlying subject-object mappings are the original manual curation.",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/loincpart2uberon.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -591,144 +599,14 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
-  },
-  {
-    "id": "cpath_obo_omop",
-    "description": "All C-Path generated mappings of OBO terms to OMOP terms",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
     "status": "ok",
     "metadata_completeness_score": 0.3409
-  },
-  {
-    "id": "cpath_obo_omop_invert",
-    "description": "Inversion of the C-Path generated OBO to OMOP mappings",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3409
-  },
-  {
-    "id": "fars_obo_omop",
-    "description": "C-Path generated mappings of OBO to OMOP terms: FARS COA",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3409
-  },
-  {
-    "id": "fars_obo_omop_invert",
-    "description": "Inversion of the C-Path generated OBO to OMOP mappings: FARS COA",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/fars_obo_omop_invert.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3409
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.7250177",
-    "version": "V1.5",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3636
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.6949696",
-    "version": "V1.1",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3636
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.6949858",
-    "version": "V1.1",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3636
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-09-01/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "subject_source": {
-      "id": "infores:mondo"
-    },
-    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.4042
   },
   {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.6.1-dev-5d3d419d",
+    "version": "0.6.1-dev-ed12b9f4",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -1288,6 +1166,25 @@
       "id": "https://www.ebi.ac.uk/biosamples/"
     },
     "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/ebi-biosamples.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
+        "name": "EBI Text Mappings",
+        "url": "https://github.com/mapping-commons/ebi-text-mappings"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3815
+  },
+  {
+    "id": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/amr-portal.sssom.tsv",
+    "description": "Manually curated antimicrobial name-to-ontology mappings from the AMR Portal",
+    "license": "https://w3id.org/sssom/license/unspecified",
+    "type": "sssom",
+    "subject_source": {
+      "id": "https://www.ebi.ac.uk/amr/"
+    },
+    "content_url": "https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/main/mappings/amr-portal.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/ebi-text-mappings",
