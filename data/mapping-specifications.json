@@ -343,10 +343,10 @@
     "metadata_completeness_score": 0.2727
   },
   {
-    "id": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
-    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
+    "id": "https://w3id.org/sssom/mappings/67df215d-fffd-4d37-b42f-268fa6cea80c",
+    "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
-    "status": "fetch_error",
+    "content_url": "http://w3id.org/sssom/commons/monarch/mappings/ncit-hp.sssom.tsv",
     "registries": [
       {
         "id": "https://w3id.org/sssom/commons/monarch",
@@ -354,7 +354,8 @@
         "url": "https://github.com/monarch-initiative/monarch-mapping-commons"
       }
     ],
-    "metadata_completeness_score": 0.0
+    "status": "ok",
+    "metadata_completeness_score": 0.2727
   },
   {
     "id": "https://w3id.org/sssom/mappings/467f578f-3319-4fb4-92fb-bddaf41b0c1f",
@@ -603,6 +604,103 @@
     "metadata_completeness_score": 0.3409
   },
   {
+    "id": "cpath_obo_omop",
+    "description": "All C-Path generated mappings of OBO terms to OMOP terms",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
+  },
+  {
+    "id": "cpath_obo_omop_invert",
+    "description": "Inversion of the C-Path generated OBO to OMOP mappings",
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3409
+  },
+  {
+    "id": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
+    "type": "sssom",
+    "status": "fetch_error",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "metadata_completeness_score": 0.0
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.6949696",
+    "version": "V1.1",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
+  },
+  {
+    "id": "https://doi.org/10.5281/zenodo.6949858",
+    "version": "V1.1",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3636
+  },
+  {
+    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-09-01/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "subject_source": {
+      "id": "infores:mondo"
+    },
+    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://w3id.org/cpont/mappings",
+        "name": "C-Path Mapping Commons",
+        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.4042
+  },
+  {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
@@ -626,6 +724,22 @@
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "https://github.com/biopragmatics/bioregistry/raw/refs/heads/main/exports/sssom/bioregistry.sssom.tsv",
+    "registries": [
+      {
+        "id": "https://github.com/biopragmatics/mapping-registry",
+        "name": "Biopragmatics Mapping Registry",
+        "url": "https://github.com/biopragmatics"
+      }
+    ],
+    "status": "ok",
+    "metadata_completeness_score": 0.3182
+  },
+  {
+    "id": "https://github.com/biopragmatics/bioregistry/raw/refs/heads/main/exports/analyses/mapping_checking/mapping_embedding_similarities.tsv",
+    "name": "Bioregistry Mapping Similarity Analysis",
+    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "type": "sssom",
+    "content_url": "https://raw.githubusercontent.com/biopragmatics/bioregistry/refs/heads/main/exports/analyses/mapping_checking/mapping_embedding_similarities.sssom.tsv",
     "registries": [
       {
         "id": "https://github.com/biopragmatics/mapping-registry",
