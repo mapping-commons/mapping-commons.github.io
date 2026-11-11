@@ -54,38 +54,29 @@ To add a new mapping registry to the Mapping Commons:
 
 ## Add a new transform specification
 
-This repository is the source of truth for linkml-map transforms that convert mapping formats into the FAIR Mappings Schema. Currently supported:
+The linkml-map transforms that convert mapping formats into the FAIR Mappings Schema, and the slot-level SSSOM sets that document them, live in [fair-mappings-schema](https://github.com/mapping-commons/fair-mappings-schema) (`src/fair_mappings_schema/transformations/` and `src/fair_mappings_schema/mappings/`). That repository is their source of truth, and this one only registers them. Currently supported:
 
-| Format | Transform file | Source type |
-|--------|---------------|-------------|
-| SSSOM | `transforms/sssom-to-fair.transformation.yaml` | `mapping set` |
-| LinkML-Map | `transforms/linkmlmap-to-fair.transformation.yaml` | `TransformationSpecification` |
+| Format | Transform | Source type |
+|--------|-----------|-------------|
+| SSSOM | <https://w3id.org/fair-map/transforms/sssom-to-fair> | `mapping set` |
+| LinkML-Map | <https://w3id.org/fair-map/transforms/linkmlmap-to-fair> | `TransformationSpecification` |
 
 To add support for a new mapping format:
 
-1. **Create a transform file** in `transforms/` following the [linkml-map specification](https://linkml.io/linkml-map/). The transform should map your format's metadata to `MappingSpecification` fields.
+1. **Add the transform** (and its slot-level SSSOM set) to fair-mappings-schema, following the [linkml-map specification](https://linkml.io/linkml-map/). The transform maps your format's metadata to `MappingSpecification` fields.
 
-2. **Register it** in `registry.yml`:
+2. **Give it a PURL** under `https://w3id.org/fair-map/transforms/` in the [w3id `fair-map` config](https://github.com/perma-id/w3id.org/tree/master/ids/fair-map).
+
+3. **Register it** in `registry.yml` by that PURL:
 
    ```yaml
-   transform_references:
-     - id: https://w3id.org/linkml/transformer/myformat-to-fair-mappings
-       title: MyFormat to FAIR Mappings Schema
-       description: Transforms MyFormat metadata to FAIR Mappings Schema
+   mapping_set_references:
+     - mapping_set_id: https://w3id.org/fair-map/transforms/myformat-to-fair
+       mapping_set_group: fair-mappings-transforms
        local_name: myformat-to-fair.transformation.yaml
-       source_format: myformat
-       source_schema_url: https://example.org/myformat-schema.yaml
-       source_type: MyRootClass
    ```
 
-3. **Update `scripts/cli.py`** to handle the new format if it requires different fetching/parsing logic.
-
-4. **Test locally**:
-
-   ```bash
-   just transform-sssom my-input.yaml my-output.yaml   # for SSSOM
-   just transform-linkmlmap my-input.yaml my-output.yaml  # for LinkML-Map
-   ```
+4. **Update `scripts/cli.py`** to handle the new format if it requires different fetching/parsing logic.
 
 ## Local development
 
