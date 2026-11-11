@@ -137,47 +137,41 @@ def _process_sssom_mapping_set(mapping_set_id: str, mapping_set_uri: str) -> dic
 
 
 def _process_transform_registry(registry_path: str) -> list[dict]:
-    """Process local transform specs in registry.yml as browsable entries."""
+    """Process the transform specs and slot mappings in registry.yml as browsable entries.
+
+    The files live in mapping-commons/fair-mappings-schema; each one is fetched
+    from its mapping_set_id (a PURL) or mirror_from, not read from this repository.
+    """
     with open(registry_path) as f:
         registry = yaml.safe_load(f)
 
     info = _registry_info(registry)
-    base_dir = os.path.dirname(registry_path)
-    search_dirs = ["transforms", "mappings"]
     specs = []
 
     for ref in registry.get("mapping_set_references", []):
         local_name = ref.get("local_name")
-        if not local_name:
-            continue
-
-        # Find the file in one of the search directories
-        input_file = None
-        for d in search_dirs:
-            candidate = os.path.join(base_dir, d, local_name)
-            if os.path.exists(candidate):
-                input_file = candidate
-                break
-        if not input_file:
-            click.echo(f"File not found: {local_name} (searched {search_dirs})", err=True)
+        url = ref.get("mirror_from", ref.get("mapping_set_id"))
+        if not local_name or not url:
             continue
 
         # Detect mapping type from file extension
         mapping_type = "sssom" if local_name.endswith(".sssom.tsv") else "linkml_map"
 
         try:
+            response = _session.get(url)
+            if response.status_code != 200:
+                raise RuntimeError(f"HTTP {response.status_code} fetching {url}")
             if mapping_type == "sssom":
-                with open(input_file) as f:
-                    captured, columns = _capture_sssom_head(f)
+                captured, columns = _capture_sssom_head(response.text.splitlines())
                 meta = parse_sssom_tsv(iter(captured))
                 _inject_per_mapping_source(meta, columns)
                 spec = transform_to_fair(meta, "sssom")
             else:
-                spec = load_mapping(input_file, mapping_type)
+                spec = transform_to_fair(yaml.safe_load(response.text), mapping_type)
             spec["registries"] = [info]
             specs.append(spec)
         except Exception as e:
-            click.echo(f"Transform failed for {local_name}: {e}", err=True)
+            click.echo(f"Transform failed for {local_name} ({url}): {e}", err=True)
 
     return specs
 

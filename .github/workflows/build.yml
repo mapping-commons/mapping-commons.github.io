@@ -6,7 +6,7 @@ on:
         paths:
             - 'mapping-server.yml'
             - 'scripts/cli.py'
-            - 'transforms/**'
+            - 'registry.yml'
     schedule:
         - cron: "0 0 1 * *"
     workflow_dispatch:
