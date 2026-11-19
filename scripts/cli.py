@@ -210,13 +210,33 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
         registry_id = registry.get("id")
         registry_uri = registry.get("url")
 
-        response = _session.get(registry_uri)
-        if response.status_code != 200:
-            msg = f"Error fetching registry file: {registry_uri} (HTTP {response.status_code})"
+        # A single registry being unreachable (e.g. a GitLab WAF returning 403
+        # to CI runners) must not abort the entire ETL. Log and skip.
+        try:
+            response = _session.get(registry_uri)
+        except requests.RequestException as e:
+            msg = f"SKIP registry {registry_id} ({registry_uri}): {e}"
             logger.error(msg)
+            click.echo(msg, err=True)
+            continue
+        if response.status_code != 200:
+            msg = f"SKIP registry {registry_id} ({registry_uri}): HTTP {response.status_code}"
+            logger.error(msg)
+            click.echo(msg, err=True)
             continue
 
-        registry_data = yaml.safe_load(response.text)
+        try:
+            registry_data = yaml.safe_load(response.text)
+        except yaml.YAMLError as e:
+            msg = f"SKIP registry {registry_id} ({registry_uri}): invalid YAML — {e}"
+            logger.error(msg)
+            click.echo(msg, err=True)
+            continue
+        if not isinstance(registry_data, dict):
+            msg = f"SKIP registry {registry_id} ({registry_uri}): not a YAML mapping (got {type(registry_data).__name__})"
+            logger.error(msg)
+            click.echo(msg, err=True)
+            continue
         info = _registry_info(registry_data)
 
         for mapping_set in registry_data.get("mapping_set_references", []):
