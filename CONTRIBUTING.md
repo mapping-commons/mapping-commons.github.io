@@ -47,8 +47,11 @@ To add a new mapping registry to the Mapping Commons:
    registries:
      # ... existing entries ...
      - id: my-mappings
-       uri: https://raw.githubusercontent.com/org/my-mappings/main/registry.yml
+       url: https://raw.githubusercontent.com/org/my-mappings/main/registry.yml
+       mapping_registry_id: https://example.org/my-mappings
    ```
+
+   `mapping_registry_id` must match the one in your registry YAML. If your registry is unreachable during a rebuild, the site keeps its entries from the previous run.
 
 4. The CI will automatically fetch your registry, extract metadata from each mapping set, and include it in the site.
 
