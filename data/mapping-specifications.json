@@ -246,7 +246,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-10-06/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-11-03/mappings/mondo_hasdbxref_icd10cm.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -284,7 +284,7 @@
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.6.1-dev-ed12b9f4",
+    "version": "0.6.1-dev-9e9cd532",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/mesh_chebi_biomappings.sssom.tsv",
@@ -395,7 +395,8 @@
     "metadata_completeness_score": 0.4221
   },
   {
-    "id": "https://w3id.org/sssom/mappings/3e59a3bd-7601-42fa-9317-99b33b830ea5",
+    "id": "https://data.monarchinitiative.org/mappings/upheno-species-independent.sssom.tsv",
+    "description": "The official uPheno species independent mappings.",
     "license": "https://w3id.org/sssom/license/unspecified",
     "type": "sssom",
     "content_url": "http://w3id.org/sssom/commons/monarch/mappings/upheno-species-independent.sssom.tsv",
@@ -407,7 +408,7 @@
       }
     ],
     "status": "ok",
-    "metadata_completeness_score": 0.2727
+    "metadata_completeness_score": 0.3409
   },
   {
     "id": "http://w3id.org/sssom/commons/monarch/mappings/uberon.sssom.tsv",
@@ -440,7 +441,7 @@
   },
   {
     "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-10-06/mappings/mondo_hasdbxref_hp.sssom.tsv",
+    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-11-03/mappings/mondo_hasdbxref_hp.sssom.tsv",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "subject_source": {
@@ -604,109 +605,10 @@
     "metadata_completeness_score": 0.3409
   },
   {
-    "id": "cpath_obo_omop",
-    "description": "All C-Path generated mappings of OBO terms to OMOP terms",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3409
-  },
-  {
-    "id": "cpath_obo_omop_invert",
-    "description": "Inversion of the C-Path generated OBO to OMOP mappings",
-    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/obo_omop_invert.cpath.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3409
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.7250177",
-    "version": "V1.5",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_condition.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3636
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.6949696",
-    "version": "V1.1",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_drug_exposure.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3636
-  },
-  {
-    "id": "https://doi.org/10.5281/zenodo.6949858",
-    "version": "V1.1",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "content_url": "https://w3id.org/cpont/mappings/omop2obo_measurement.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.3636
-  },
-  {
-    "id": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "version": "http://purl.obolibrary.org/obo/mondo/releases/2026-10-06/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "license": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "type": "sssom",
-    "subject_source": {
-      "id": "infores:mondo"
-    },
-    "content_url": "http://purl.obolibrary.org/obo/mondo/mappings/mondo_hasdbxref_hp.sssom.tsv",
-    "registries": [
-      {
-        "id": "https://w3id.org/cpont/mappings",
-        "name": "C-Path Mapping Commons",
-        "url": "https://gitlab.c-path.org/c-pathontology/mapping-commons"
-      }
-    ],
-    "status": "ok",
-    "metadata_completeness_score": 0.4042
-  },
-  {
     "id": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
     "name": "Biomappings",
     "description": "Biomappings is a repository of community curated and predicted equivalences and related mappings between named biological entities that are not available from primary sources. It's also a place where anyone can contribute curations of predicted mappings or their own novel mappings.",
-    "version": "0.6.1-dev-ed12b9f4",
+    "version": "0.6.1-dev-9e9cd532",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
     "type": "sssom",
     "content_url": "https://w3id.org/biopragmatics/biomappings/sssom/biomappings.sssom.tsv",
@@ -1388,47 +1290,7 @@
     "metadata_completeness_score": 0.3815
   },
   {
-    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings",
-    "name": "SSSOM to FAIR Mappings Schema Transformation",
-    "description": "Transforms an SSSOM Mapping Set to a FAIR Mappings Schema MappingSpecification.\nThis preserves metadata elements while discarding the individual mappings,\nwhich have no equivalent in the FAIR Mappings Schema (which focuses on\nmapping specification metadata, not individual mapping assertions).\n\nKey transformations:\n- mapping_set_id \u2192 id\n- mapping_set_title \u2192 name\n- mapping_set_description \u2192 description\n- subject_source \u2192 subject_source (Source with id)\n- object_source \u2192 object_source (Source with id)\n- Sets type to 'sssom' to indicate the mapping specification type\n\nNote: Creator/author/reviewer transformations are simplified since SSSOM\nuses flat ID lists while FAIR Mappings uses structured Agent objects.",
-    "type": "linkml_map",
-    "subject_source": {
-      "name": "tmp/sssom-schema.yaml"
-    },
-    "object_source": {
-      "name": "tmp/fair-mappings-schema.yaml"
-    },
-    "registries": [
-      {
-        "id": "https://w3id.org/mapping-commons/transforms",
-        "name": "Mapping Commons Transform Registry",
-        "url": "https://github.com/mapping-commons/mapping-commons.github.io"
-      }
-    ],
-    "metadata_completeness_score": 0.3052
-  },
-  {
-    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings",
-    "name": "LinkML-Map to FAIR Mappings Schema Transformation",
-    "description": "Transforms a LinkML-Map TransformationSpecification to a FAIR Mappings Schema\nMappingSpecification. This preserves metadata elements while discarding the\nactual transformation rules (class_derivations, slot_derivations, etc.) which\nhave no equivalent in the FAIR Mappings Schema.",
-    "type": "linkml_map",
-    "subject_source": {
-      "name": "tmp/linkml-map-schema.yaml"
-    },
-    "object_source": {
-      "name": "tmp/fair-mappings-schema.yaml"
-    },
-    "registries": [
-      {
-        "id": "https://w3id.org/mapping-commons/transforms",
-        "name": "Mapping Commons Transform Registry",
-        "url": "https://github.com/mapping-commons/mapping-commons.github.io"
-      }
-    ],
-    "metadata_completeness_score": 0.3052
-  },
-  {
-    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings",
+    "id": "https://w3id.org/fair-map/mappings/sssom-to-fair",
     "name": "SSSOM to FAIR Mappings Schema Slot Mappings",
     "description": "Slot-level correspondences between SSSOM Mapping Set and FAIR Mappings Schema MappingSpecification",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
@@ -1443,7 +1305,7 @@
     "metadata_completeness_score": 0.3864
   },
   {
-    "id": "https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings/slot-mappings",
+    "id": "https://w3id.org/fair-map/mappings/linkmlmap-to-fair",
     "name": "LinkML-Map to FAIR Mappings Schema Slot Mappings",
     "description": "Slot-level correspondences between LinkML-Map TransformationSpecification and FAIR Mappings Schema MappingSpecification",
     "license": "https://creativecommons.org/publicdomain/zero/1.0/",
