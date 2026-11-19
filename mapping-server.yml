@@ -5,18 +5,27 @@ title: Mapping Commons Registry Server (Under Construction)
 #   id: A short, locally-unique code used to identify this registry in logs,
 #       error messages, and internal references. Not part of any external ID space.
 #   url: The URL of the remote registry YAML file.
+#   mapping_registry_id: The mapping_registry_id declared in the remote registry
+#       YAML. If the registry cannot be fetched, its entries with this id are
+#       kept from the previous data/mapping-specifications.json.
 registries:
   - id: mh_mapping_initiative
     url: https://raw.githubusercontent.com/mapping-commons/mh_mapping_initiative/master/registry.yml
+    mapping_registry_id: https://w3id.org/sssom/commons/mouse-human
   - id: disease
     url: https://raw.githubusercontent.com/mapping-commons/disease-mappings/main/mappings.yml
+    mapping_registry_id: https://w3id.org/sssom/commons/disease
   - id: monarch
     url: https://raw.githubusercontent.com/monarch-initiative/monarch-mapping-commons/main/registry.yml
+    mapping_registry_id: https://w3id.org/sssom/commons/monarch
   - id: c-path
     url: https://gitlab.c-path.org/c-pathontology/mapping-commons/-/raw/main/registry.yml
+    mapping_registry_id: https://w3id.org/cpont/mappings
   - id: mesh-mappings
     url: https://raw.githubusercontent.com/mapping-commons/mesh-mappings/main/mappings.yml
   - id: biopragmatics
     url: https://github.com/biopragmatics/mapping-registry/raw/refs/heads/main/registry.yml
+    mapping_registry_id: https://github.com/biopragmatics/mapping-registry
   - id: ebi-text-mappings
     url: https://raw.githubusercontent.com/mapping-commons/ebi-text-mappings/refs/heads/main/mappings.yml
+    mapping_registry_id: https://w3id.org/sssom/commons/ebi-text-mappings

@@ -9,6 +9,9 @@ import logging
 import traceback
 from datetime import datetime, timezone
 
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
 from fair_mappings_schema.parsing import parse_sssom_tsv, transform_to_fair, load_mapping
 from fair_mappings_schema.scoring import score_instance
 from fair_mappings_schema.schema import get_schema_view
@@ -22,6 +25,20 @@ _session.headers["User-Agent"] = (
     "mapping-commons-registry/1.0 "
     "(+https://github.com/mapping-commons/mapping-commons.github.io)"
 )
+# Retry transient failures a few times. raise_on_status=False hands the final
+# 5xx response back to the caller instead of raising RetryError.
+_retry = Retry(
+    total=3,
+    backoff_factor=2,
+    status_forcelist=(429, 500, 502, 503, 504),
+    raise_on_status=False,
+)
+_session.mount("https://", HTTPAdapter(max_retries=_retry))
+_session.mount("http://", HTTPAdapter(max_retries=_retry))
+
+# (connect, read) timeout in seconds for every request, so a hung host
+# cannot stall the job.
+TIMEOUT = (10, 60)
 
 
 def _registry_info(registry_data: dict) -> dict:
@@ -33,6 +50,46 @@ def _registry_info(registry_data: dict) -> dict:
             "url": registry_data.get("homepage"),
         }.items() if v is not None
     }
+
+
+def _fetch_registry(registry_uri: str) -> tuple[dict | None, str | None]:
+    """Fetch and parse a registry YAML.
+
+    Returns (registry_data, None) on success and (None, reason) on failure.
+    """
+    try:
+        response = _session.get(registry_uri, timeout=TIMEOUT)
+    except requests.RequestException as e:
+        return None, str(e)
+    if response.status_code != 200:
+        return None, f"HTTP {response.status_code}"
+    try:
+        registry_data = yaml.safe_load(response.text)
+    except yaml.YAMLError as e:
+        return None, f"invalid YAML — {e}"
+    if not isinstance(registry_data, dict):
+        return None, f"not a YAML mapping (got {type(registry_data).__name__})"
+    return registry_data, None
+
+
+def _load_previous(output_file: str) -> list[dict]:
+    """Read the previous ETL output, or return [] if there is none."""
+    try:
+        with open(output_file) as f:
+            previous = json.load(f)
+    except (OSError, ValueError):
+        return []
+    return previous if isinstance(previous, list) else []
+
+
+def _entries_for_registry(specs: list[dict], mapping_registry_id: str | None) -> list[dict]:
+    """Return the specs that came from the registry with this mapping_registry_id."""
+    if not mapping_registry_id:
+        return []
+    return [
+        s for s in specs
+        if any(r.get("id") == mapping_registry_id for r in s.get("registries", []))
+    ]
 
 
 def _iter_gz_lines(response: requests.Response):
@@ -109,7 +166,7 @@ def _process_sssom_mapping_set(mapping_set_id: str, mapping_set_uri: str) -> dic
 
     Raises on any error so the caller can log context and skip.
     """
-    response = _session.get(mapping_set_uri, stream=True)
+    response = _session.get(mapping_set_uri, stream=True, timeout=TIMEOUT)
     if response.status_code != 200:
         raise RuntimeError(f"HTTP {response.status_code} fetching {mapping_set_uri}")
 
@@ -158,7 +215,7 @@ def _process_transform_registry(registry_path: str) -> list[dict]:
         mapping_type = "sssom" if local_name.endswith(".sssom.tsv") else "linkml_map"
 
         try:
-            response = _session.get(url)
+            response = _session.get(url, timeout=TIMEOUT)
             if response.status_code != 200:
                 raise RuntimeError(f"HTTP {response.status_code} fetching {url}")
             if mapping_type == "sssom":
@@ -204,40 +261,43 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
     with open(registry_file) as f:
         main_registry = yaml.safe_load(f)
 
+    # Read before overwriting: entries of a skipped registry are carried forward.
+    previous = _load_previous(output_file)
     specifications = []
+    skipped = []
+    # Carried-forward entries keep their old score; see the scoring loop.
+    carried = set()
 
     for registry in main_registry.get("registries", []):
         registry_id = registry.get("id")
         registry_uri = registry.get("url")
+        mapping_registry_id = registry.get("mapping_registry_id")
 
         # A single registry being unreachable (e.g. a GitLab WAF returning 403
-        # to CI runners) must not abort the entire ETL. Log and skip.
-        try:
-            response = _session.get(registry_uri)
-        except requests.RequestException as e:
-            msg = f"SKIP registry {registry_id} ({registry_uri}): {e}"
+        # to CI runners) must not abort the entire ETL. Log, skip and keep its
+        # entries from the previous run so the rebuild does not delete them.
+        registry_data, reason = _fetch_registry(registry_uri)
+        if reason:
+            msg = f"SKIP registry {registry_id} ({registry_uri}): {reason}"
             logger.error(msg)
             click.echo(msg, err=True)
-            continue
-        if response.status_code != 200:
-            msg = f"SKIP registry {registry_id} ({registry_uri}): HTTP {response.status_code}"
-            logger.error(msg)
+            stale = _entries_for_registry(previous, mapping_registry_id)
+            specifications.extend(stale)
+            carried.update(id(s) for s in stale)
+            msg = f"CARRY registry {registry_id}: kept {len(stale)} stale entries from previous {output_file}"
+            if not mapping_registry_id:
+                msg += f" (no mapping_registry_id for it in {registry_file})"
+            logger.warning(msg)
             click.echo(msg, err=True)
+            skipped.append((registry_id, reason, len(stale)))
             continue
 
-        try:
-            registry_data = yaml.safe_load(response.text)
-        except yaml.YAMLError as e:
-            msg = f"SKIP registry {registry_id} ({registry_uri}): invalid YAML — {e}"
-            logger.error(msg)
-            click.echo(msg, err=True)
-            continue
-        if not isinstance(registry_data, dict):
-            msg = f"SKIP registry {registry_id} ({registry_uri}): not a YAML mapping (got {type(registry_data).__name__})"
-            logger.error(msg)
-            click.echo(msg, err=True)
-            continue
         info = _registry_info(registry_data)
+        if mapping_registry_id and info.get("id") != mapping_registry_id:
+            msg = (f"Registry {registry_id} declares mapping_registry_id {info.get('id')}, "
+                   f"expected {mapping_registry_id}; carry-forward would not find its entries")
+            logger.warning(msg)
+            click.echo(msg, err=True)
 
         for mapping_set in registry_data.get("mapping_set_references", []):
             mapping_set_id = mapping_set.get("mapping_set_id")
@@ -277,6 +337,8 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
     # Metadata completeness scores
     sv = get_schema_view()
     for spec in specifications:
+        if id(spec) in carried:
+            continue
         if spec.get("status", "ok") == "ok":
             spec["metadata_completeness_score"] = score_instance(spec, sv=sv)["fair_score"]
         else:
@@ -291,6 +353,18 @@ def prepare_mapping_registry(registry_file, output_file, log_file):
         summary += f" ({stubs} with incomplete metadata, see {log_file})"
     click.echo(summary)
     logger.info(summary)
+
+    # Surface skipped registries on the Actions run page. The job still
+    # succeeds so the monthly rebuild PR is created.
+    step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if skipped and step_summary:
+        with open(step_summary, "a") as f:
+            f.write("### Registries skipped\n\n")
+            f.write("These registries could not be fetched. Their entries were carried "
+                    "forward unchanged from the previous run.\n\n")
+            for registry_id, reason, n in skipped:
+                first_line = reason.splitlines()[0] if reason else ""
+                f.write(f"- `{registry_id}`: {first_line} ({n} entries carried forward)\n")
 
 
 @cli.command()
