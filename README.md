@@ -12,7 +12,7 @@ This repository:
 - Transforms SSSOM and LinkML-Map metadata into the FAIR Mappings Schema using [linkml-map](https://github.com/linkml/linkml-map)
 - Serves a static search/browse interface on GitHub Pages
 
-The transform specifications in [`transforms/`](transforms/) are the source of truth for translating existing mapping formats into the FAIR Mappings Schema. See [`registry.yml`](registry.yml) for the full list.
+The transform specifications that translate existing mapping formats into the FAIR Mappings Schema, and the slot-level SSSOM mapping sets that document them, live in [fair-mappings-schema](https://github.com/mapping-commons/fair-mappings-schema), which is their source of truth. [`registry.yml`](registry.yml) lists them by their PURLs, and the ETL fetches them from there.
 
 ## Local development
 

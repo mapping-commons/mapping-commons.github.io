@@ -6,19 +6,23 @@ mapping_registry_description: >-
 homepage: https://github.com/mapping-commons/mapping-commons.github.io
 documentation: https://github.com/mapping-commons/mapping-commons.github.io/blob/main/README.md
 
+# The source of truth for these four files is
+# https://github.com/mapping-commons/fair-mappings-schema. Each mapping_set_id
+# is a PURL that resolves to the file there; the ETL fetches it from that id.
+# local_name is the file name, which tells the ETL how to read it.
 mapping_set_references:
-  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings
+  - mapping_set_id: https://w3id.org/fair-map/transforms/sssom-to-fair
     mapping_set_group: fair-mappings-transforms
     local_name: sssom-to-fair.transformation.yaml
 
-  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings
+  - mapping_set_id: https://w3id.org/fair-map/transforms/linkmlmap-to-fair
     mapping_set_group: fair-mappings-transforms
     local_name: linkmlmap-to-fair.transformation.yaml
 
-  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/sssom-to-fair-mappings/slot-mappings
+  - mapping_set_id: https://w3id.org/fair-map/mappings/sssom-to-fair
     mapping_set_group: fair-mappings-slot-mappings
     local_name: sssom-to-fair.sssom.tsv
 
-  - mapping_set_id: https://w3id.org/mapping-commons/fair/mappingspecification/linkml-map-to-fair-mappings/slot-mappings
+  - mapping_set_id: https://w3id.org/fair-map/mappings/linkmlmap-to-fair
     mapping_set_group: fair-mappings-slot-mappings
     local_name: linkmlmap-to-fair.sssom.tsv
